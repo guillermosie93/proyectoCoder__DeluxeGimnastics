@@ -1,0 +1,71 @@
+/*font*/
+$font-principal: montserrat, sans serif, arial;
+$font-gruesa: 900;
+$font-mediagruesa: 500;
+$font-xl: 3rem;
+$font-l: 2.2rem;
+$font-m: 1.5rem;
+$font-s:1rem;
+
+@mixin font-type($size, $grosor,) {
+    font-size: $size;
+    font-weight: $grosor;    
+}
+
+*{
+    font-family: $font-principal;
+}
+
+a{
+    text-decoration: none;
+}
+
+h4{
+    @include font-type($font-m, $font-gruesa);
+    text-align: center;
+}
+
+h1, h2 {
+    font-weight: $font-gruesa;
+}
+
+ul{
+    list-style: none;
+}
+
+.body__banner__div--img h1, h2{
+    font-weight: $font-gruesa;
+}
+
+.index__main__div__div-text{
+    a{
+        font-size: $font-xl;
+        font-weight: $font-gruesa;
+        text-align: center;
+    }
+    span{
+        font-size: $font-m;
+        font-weight: $font-mediagruesa;
+        text-align: center;
+    }
+}
+
+.body__footer__div-text{
+    p{
+        font-size: $font-s + .2;
+    }
+}
+
+.body__footer__div-sitemap{
+    list-style: none;
+        li a{
+            font-weight: $font-gruesa;
+        }
+        li{
+            font-weight: 200;
+        }
+}
+
+
+
+

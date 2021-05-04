@@ -1,0 +1,356 @@
+@charset "UTF-8";
+/*colores*/
+/*solo letra-clara*/
+.index__main__div__div-text span {
+  color: #eab4e9; }
+
+.index__main__div__div-text a {
+  color: #eab4e9; }
+
+/*letra-clara-c/sombra*/
+.index__aside-contain {
+  color: #eab4e9;
+  text-shadow: 3px 3px 4px #eab4e9; }
+
+.body__footer__div-icon a {
+  color: #eab4e9;
+  text-shadow: 3px 3px 4px #eab4e9; }
+
+.body__footer__div-text p {
+  color: #eab4e9;
+  text-shadow: 3px 3px 4px #eab4e9; }
+
+/*fondos de las card*/
+.card-img {
+  background-image: url(../media/clase_02.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat; }
+
+.card-horario {
+  background-image: url(../media/horarios.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat; }
+
+.card-nov {
+  background-image: url(../media/clase_4.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat; }
+
+.card-form {
+  background-image: url(../media/salon_2.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat; }
+
+.body--contain {
+  background-image: url(../media/fondo.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: repeat; }
+
+.body__banner--contain {
+  background-image: url(../media/banner.jpeg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat; }
+
+.body__banner__div--img h1, h2 {
+  text-shadow: 3px 3px 4px black; }
+
+.index__main__div__div-degradado {
+  background-image: linear-gradient(to bottom, transparent, #541e53); }
+
+.index__main__div__div-text a {
+  color: #eab4e9;
+  text-shadow: 3px 3px 4px black;
+  background-color: #4974a5;
+  opacity: 50%; }
+
+.index__article__div-contain h4 {
+  background-color: #541e53;
+  color: #eab4e9; }
+
+.index__aside-contain {
+  background-color: #541e53; }
+
+.body__footer-contain {
+  background-image: linear-gradient(to bottom, #541e53, #2c002b); }
+
+.body__footer__div-sitemap {
+  color: #eab4e9; }
+  .body__footer__div-sitemap li a {
+    color: #eab4e9;
+    text-shadow: 3px 3px 4px #eab4e9; }
+
+/*fotos*/
+.bttn--img {
+  padding: 0px;
+  box-shadow: 3px 3px 4px black; }
+
+.modal-header {
+  background-image: url(../media/fondo.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: repeat;
+  background-color: #eab4e9; }
+
+.modal-body {
+  background-image: url(../media/fondo.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: repeat;
+  background-color: #eab4e9; }
+
+.modal-footer {
+  background-image: url(../media/fondo.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: repeat;
+  background-color: #eab4e9; }
+
+/*font*/
+* {
+  font-family: montserrat, sans serif, arial; }
+
+a {
+  text-decoration: none; }
+
+h4 {
+  font-size: 1.5rem;
+  font-weight: 900;
+  text-align: center; }
+
+h1, h2 {
+  font-weight: 900; }
+
+ul {
+  list-style: none; }
+
+.body__banner__div--img h1, h2 {
+  font-weight: 900; }
+
+.index__main__div__div-text a {
+  font-size: 3rem;
+  font-weight: 900;
+  text-align: center; }
+
+.index__main__div__div-text span {
+  font-size: 1.5rem;
+  font-weight: 500;
+  text-align: center; }
+
+.body__footer__div-text p {
+  font-size: 1.2rem; }
+
+.body__footer__div-sitemap {
+  list-style: none; }
+  .body__footer__div-sitemap li a {
+    font-weight: 900; }
+  .body__footer__div-sitemap li {
+    font-weight: 200; }
+
+/*tamaños*/
+/*bloques-100% de pantalla*/
+.body__banner--contain {
+  width: 100%; }
+
+.index__main-contain {
+  width: 100%; }
+
+.index__aside-contain {
+  width: 100%; }
+
+.body__footer-contain {
+  width: 100%; }
+
+.index__main__div-contain {
+  width: 100%; }
+
+.index__article__div-contain {
+  width: 100%; }
+
+.index__article__div-contain iframe {
+  width: 100%; }
+
+.body__footer-contain {
+  width: 100%; }
+
+.body__banner--contain {
+  height: 300px; }
+
+.index__main__div-contain {
+  height: 300px; }
+
+.index__article-mapa {
+  height: 300px; }
+
+.index__main__div-contain {
+  height: 350px; }
+
+.index__main__div__div-degradado {
+  height: 350px; }
+
+.index__aside-contain {
+  height: 100%; }
+
+.index__aside__div-img {
+  height: 100%; }
+  .index__aside__div-img img {
+    border-radius: 50%;
+    height: 200px;
+    width: 200px; }
+
+.body__footer-contain {
+  height: 400px; }
+
+/*fotos*/
+.bttn--img {
+  border-radius: 25px; }
+
+.galeria__main__div__img-resp {
+  border-radius: 25px; }
+
+.galeria__main__div__modal__img-tamano {
+  height: 500px;
+  width: 600px; }
+
+/*estructura*/
+@media only screen and (min-width: 320px) {
+  .body--contain {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-content: center; }
+  .body__banner--contain {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-content: center; }
+  .body__banner__div--img {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-content: center; }
+  .index__main-contain {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-content: center; }
+  .index__main__div__div-text {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-content: center; }
+  .index__aside-contain {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-content: center; }
+  .body__galeria--contain {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-content: center; }
+  .body__banner__div--img h1 {
+    text-align: center; }
+  .body__banner__div--img h2 {
+    text-align: center; }
+  .index__main__div__div-text {
+    padding-top: 240px; }
+  .body__footer__div-text {
+    padding-top: 20px; }
+  .body__footer__div-sitemap {
+    display: none; } }
+
+@media only screen and (min-width: 750px) {
+  /*footer*/
+  .body__footer__div-text {
+    grid-area: telefono; }
+  .body__footer__div-sitemap {
+    grid-area: sitemap; }
+  .body__footer__div-icon {
+    grid-area: redes; }
+  .body__footer__div-sitemap {
+    display: block; }
+  .body__footer-contain {
+    display: grid;
+    grid-template-columns: 2fr 8fr 2fr;
+    grid-template-rows: auto;
+    grid-template-areas: "telefono sitemap redes";
+    justify-items: center;
+    align-items: start;
+    padding-top: 10px; }
+  /*general del index*/
+  .nav {
+    grid-area: nav; }
+  .body__banner--contain {
+    grid-area: banner; }
+  .index__main-contain {
+    grid-area: main; }
+  .index__article-mapa {
+    grid-area: mapa; }
+  .index__aside-contain {
+    grid-area: profes; }
+  .body__footer-contain {
+    grid-area: footer; }
+  .body__index--contain {
+    display: grid;
+    grid-template-columns: 9fr 3fr;
+    grid-template-rows: auto auto 1420px auto auto;
+    grid-template-areas: "nav nav" "banner banner" "main profes" "mapa profes" "footer footer";
+    justify-items: stretch;
+    align-items: stretch;
+    grid-column-gap: 5px; }
+  /*index_aside*/
+  .index__aside-contain {
+    justify-self: stretch;
+    align-self: stretch;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-content: space-around; }
+  .index__aside__div-img {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-around;
+    align-content: center; }
+  /*---fotos---*/
+  .galeria__main--contain {
+    display: grid;
+    grid-template-columns: repeat(4, 4fr);
+    grid-template-rows: repeat(4, auto);
+    grid-template-areas: none;
+    justify-items: center;
+    align-content: stretch;
+    grid-row-gap: 10px;
+    grid-column-gap: 10px;
+    margin: 10px 0 10px 0; }
+  .galeria__main__div__modal__img-tamano {
+    margin-left: 85px; } }
+
+/*animaciones*/
+@keyframes banner__h1h2__animation {
+  0% {
+    color: #DB9CD9;
+    text-shadow: 3px 3px 4px #541e53; }
+  25% {
+    color: #541e53;
+    text-shadow: 2px 2px 3px #DB9CD9; }
+  50% {
+    color: #DB9CD9;
+    text-shadow: 3px 3px 4px #541e53; }
+  75% {
+    color: #541e53; }
+  100% {
+    color: #DB9CD9;
+    text-shadow: 3px 3px 4px #541e53; } }
+
+.body__banner__div--img h1, h2 {
+  animation-name: banner__h1h2__animation;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in;
+  animation-duration: 5s;
+  animation-delay: 0s; }

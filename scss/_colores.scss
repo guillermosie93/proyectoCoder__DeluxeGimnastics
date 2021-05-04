@@ -1,0 +1,121 @@
+/*colores*/
+$bk-body: url(../media/fondo.png);
+$bk-header: url(../media/banner.jpeg);
+$color-principal: #541e53;
+$color-contraste: #4974a5;
+$color-principal-claro: $color-principal + 150;
+$color-contraste-claro: #B6C7DB;
+$sombra-dark: 3px 3px 4px black;
+$sombra-light: 3px 3px 4px $color-principal-claro;
+$degradado-principal-transparente: linear-gradient(to bottom, transparent, $color-principal);
+$degradado-principal-light: linear-gradient(to bottom, #ffffff, $color-principal);
+$degradado-principal: linear-gradient(to bottom, $color-principal, $color-principal - 40, );
+$font-color-light: $color-principal-claro;
+$font-color-dark: $color-principal;
+$navbar-dark-color: $color-principal;
+$modal-content-bg: url(../media/fondo.png);
+$modal-header-border-color: url(../../img/fondo.png);
+
+@mixin bk-img($img,$position, $size, $repeat) {
+    background-image: $img;
+    background-position: $position;
+    background-size: $size;
+    background-repeat: $repeat;    
+}
+
+/*solo letra-clara*/
+@each $color-light in index__main__div__div-text span, index__main__div__div-text a{
+    .#{$color-light}{
+        color: $color-principal-claro;
+    }
+}
+
+/*letra-clara-c/sombra*/
+@each $letra-clara in index__aside-contain, body__footer__div-icon a, body__footer__div-text p{
+    .#{$letra-clara}{
+        color: $font-color-light;
+        text-shadow: $sombra-light;
+    }
+}
+
+/*fondos de las card*/
+$index--card:(
+    img: url(../media/clase_02.jpg),
+    horario: url(../media/horarios.jpg),
+    nov: url(../media/clase_4.jpg),
+    form: url(../media/salon_2.jpg),
+    );
+
+@each $card--bk, $card--img in $index--card {
+    .card-#{$card--bk}{
+        @include bk-img($card--img, center, cover, no-repeat);
+    }    
+}
+
+.body--contain{
+    @include bk-img($bk-body, center, cover, repeat)
+}
+
+.body__banner--contain{
+    @include bk-img($bk-header, center, cover, no-repeat)
+}
+.body__banner__div--img h1, h2{
+ text-shadow: $sombra-dark; 
+}
+
+
+.index__main__div__div-degradado{
+    background-image: $degradado-principal-transparente;
+}
+
+.index__main__div__div-text a{
+    color: $color-principal-claro;
+    text-shadow: $sombra-dark;
+    background-color: $color-contraste;
+    opacity: 50%;
+}
+
+.index__article__div-contain{
+    h4{
+        background-color: $color-principal;
+        color: $color-principal-claro;
+    }      
+}
+
+.index__aside-contain{
+    background-color: $color-principal;
+}
+
+.body__footer-contain{
+    background-image: $degradado-principal;
+}
+
+.body__footer__div-sitemap{
+    color: $color-principal-claro;
+        li a{
+            color: $color-principal-claro;
+            text-shadow: $sombra-light;
+        }
+}
+
+/*fotos*/
+.bttn--img{
+        padding: 0px;
+        box-shadow: $sombra-dark;
+}
+
+@each $bloque in header, body, footer {
+    .modal-#{$bloque} {
+        @include bk-img($modal-content-bg, center, cover, repeat);
+        background-color: $color-principal-claro;
+    }
+}
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,63 @@
+/*tamaños*/
+$estructura-resp: 100%;
+$estructura-Xl: 600px;
+$estructura-L: 400px;
+$estructura-M: 200px;
+$estructura-S: 100px;
+$estructura-Xs: 50px;
+$bordeO: 50%;
+$borde-redondeado: 25px;
+
+@mixin alto-ancho($height, $widht) {
+    height: $height;
+    width: $widht;
+}
+
+/*bloques-100% de pantalla*/
+@each $bloque-resp in body__banner--contain, index__main-contain, index__aside-contain, body__footer-contain, index__main__div-contain, index__article__div-contain, index__article__div-contain iframe, body__footer-contain{
+    .#{$bloque-resp}{
+        width: $estructura-resp;
+    } 
+}
+
+@each $bloque300 in body__banner--contain, index__main__div-contain, index__article-mapa{
+    .#{$bloque300}{
+        height: $estructura-M + 100;
+    }
+}
+
+@each $card-1x1 in index__main__div-contain, index__main__div__div-degradado{
+    .#{$card-1x1}{
+        height: $estructura-M + 150;
+    }
+}
+
+.index__aside-contain{
+    height: $estructura-resp;
+}
+
+.index__aside__div-img{
+    height: $estructura-resp;
+    img{
+        border-radius: $bordeO;
+        height: $estructura-M;
+        width: $estructura-M;
+    }
+}
+
+.body__footer-contain{
+    height: $estructura-L;
+}
+
+/*fotos*/
+@each $galery--element in bttn--img, galeria__main__div__img-resp{
+    .#{$galery--element}{
+        border-radius: $borde-redondeado;
+    }
+}
+
+.galeria__main__div__modal__img-tamano {
+    height: $estructura-L + 100;
+    width: $estructura-Xl; 
+}
+
