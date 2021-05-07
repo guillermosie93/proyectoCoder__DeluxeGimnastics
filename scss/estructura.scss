@@ -38,6 +38,12 @@ $espaciado-l: 100px;
         display: none;
     }
 
+    .horarios__section__main--contain{
+        margin-top: $espaciado-s;
+        @include flex-box(flex, column nowrap, center, center)
+    }
+
+
 }
 
 @media only screen and (min-width: 750px){

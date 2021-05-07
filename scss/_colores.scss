@@ -9,12 +9,21 @@ $sombra-dark: 3px 3px 4px black;
 $sombra-light: 3px 3px 4px $color-principal-claro;
 $degradado-principal-transparente: linear-gradient(to bottom, transparent, $color-principal);
 $degradado-principal-light: linear-gradient(to bottom, #ffffff, $color-principal);
-$degradado-principal: linear-gradient(to bottom, $color-principal, $color-principal - 40, );
+$degradado-principal: linear-gradient(to bottom, $color-principal, $color-principal - 40);
+$degradado-principal-2: linear-gradient(to bottom, $color-principal, $color-principal - 80);
 $font-color-light: $color-principal-claro;
 $font-color-dark: $color-principal;
 $navbar-dark-color: $color-principal;
 $modal-content-bg: url(../media/fondo.png);
 $modal-header-border-color: url(../../img/fondo.png);
+$bg-dark: $color-principal - 50;
+$table-bg-level: $bg-dark;
+$table-bg: $degradado-principal-2;
+$table-hover-bg: $color-contraste;
+$table-hover-color: $color-principal-claro;
+$table-hover-bg-factor: .1;
+$border-table-color:$color-principal-claro;
+
 
 @mixin bk-img($img,$position, $size, $repeat) {
     background-image: $img;
@@ -50,6 +59,13 @@ $index--card:(
     .card-#{$card--bk}{
         @include bk-img($card--img, center, cover, no-repeat);
     }    
+}
+
+.horarios__section__main__div__h1--estilo{
+    color:$color-principal-claro;
+    text-shadow: $sombra-dark;
+    text-align: center;
+    background-color: $color-principal;
 }
 
 .body--contain{
@@ -111,10 +127,16 @@ $index--card:(
     }
 }
 
+.table{
+    background-image: $table-bg;
+    color: $color-principal-claro;
+    text-align: center;
+}
 
-
-
-
+.table-hover{
+    background-color: $table-hover-bg;
+    color: $table-hover-color;
+}
 
 
 

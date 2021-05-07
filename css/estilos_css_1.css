@@ -45,6 +45,12 @@
   background-size: cover;
   background-repeat: no-repeat; }
 
+.horarios__section__main__div__h1--estilo {
+  color: #eab4e9;
+  text-shadow: 3px 3px 4px black;
+  text-align: center;
+  background-color: #541e53; }
+
 .body--contain {
   background-image: url(../media/fondo.png);
   background-position: center;
@@ -110,6 +116,15 @@
   background-size: cover;
   background-repeat: repeat;
   background-color: #eab4e9; }
+
+.table {
+  background-image: linear-gradient(to bottom, #541e53, #040003);
+  color: #eab4e9;
+  text-align: center; }
+
+.table-hover {
+  background-color: #4974a5;
+  color: #eab4e9; }
 
 /*font*/
 * {
@@ -263,7 +278,13 @@ ul {
   .body__footer__div-text {
     padding-top: 20px; }
   .body__footer__div-sitemap {
-    display: none; } }
+    display: none; }
+  .horarios__section__main--contain {
+    margin-top: 10px;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-content: center; } }
 
 @media only screen and (min-width: 750px) {
   /*footer*/
