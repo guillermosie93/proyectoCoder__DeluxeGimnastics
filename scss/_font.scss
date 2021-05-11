@@ -33,6 +33,11 @@ ul{
     list-style: none;
 }
 
+.nav__div__div__ul__li--style{
+    @include font-type($font-s, $font-gruesa);
+    text-align: center;
+}
+
 .body__banner__div--img h1, h2{
     font-weight: $font-gruesa;
 }
@@ -64,6 +69,35 @@ ul{
         li{
             font-weight: 200;
         }
+}
+
+.bttn--card{
+    font-weight: $font-gruesa;
+    font-size: $font-xl + 1.5;
+    text-align: center;
+}
+
+.nosotros__main__div__div__card--style{
+    p{
+       @include font-type($font-s, $font-gruesa)
+    }
+}
+
+.novedades__main__div__carrusel__text{
+    h5{
+        @include font-type($font-m, $font-gruesa)
+    }
+    p{
+        @include font-type($font-l, $font-gruesa);
+    }
+}
+
+.contacto__main__form__div__div__input--style, .form-check-label, .bttn--form:hover, .bttn__form--light{
+    font-weight: $font-gruesa;
+}
+
+.contacto__aside__div__icon--style{
+    @include font-type($font-m, $font-gruesa);
 }
 
 

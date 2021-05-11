@@ -5,15 +5,17 @@
     <title>Contactanos</title>
     <meta name="description" content="Contactate con nosotros, consultanos, danos sugerencia">
     <meta name="keywords" content="formulario de contacto sugerencias consultas">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">    
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css">
-    <link rel="stylesheet" type="text/css" href="css/css/hojaEstilo01.css">
+    <link rel="stylesheet" type="text/css" href="../css/estilos_css_1.css">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap" rel="stylesheet">   
 </head>
-<body>
 
-<section class="form">
+<body class="body--contain">
+<section class="body__contacto--contain">
+
     <!--empieza el nav-->
     <nav class="navbar fixed-top navbar-dark" style="background-color: #541e50; opacity: 85%;">
         <div class="container-fluid divNav">
@@ -23,22 +25,22 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0 navList">
-                <li class="nav-item">
+                <li class="nav-item nav__div__div__ul__li--style">
                     <a href="index.html"><i class="bi bi-house-door">HOME</i></a>
                 </li>
-                <li class="nav-item">
+                <li class="nav-item nav__div__div__ul__li--style">
                     <a href="nosotros.html"><i class="bi bi-people">NOSOTROS</i></a>
                 </li>
-                <li class="nav-item">
+                <li class="nav-item nav__div__div__ul__li--style">
                     <a href="fotos.html"><i class="bi bi-images">FOTOS</i></a>
                 </li>
-                <li class="nav-item">
+                <li class="nav-item nav__div__div__ul__li--style">
                     <a href="horarios.html"><i class="bi bi-clock">HORARIOS</i></a>
                 </li>
-                <li class="nav-item">
+                <li class="nav-item nav__div__div__ul__li--style">
                     <a href="novedades.html"><i class="bi bi-newspaper">NOVEDADES</i></a>
                 </li>
-                <li class="nav-item">
+                <li class="nav-item nav__div__div__ul__li--style">
                     <a href="formulario.html"><i class="bi bi-envelope">CONTACTANOS</i></a>
                 </li>
             </ul>
@@ -47,83 +49,76 @@
         <!--finaliza el nav-->
 
 <!--banner-->
-<header class="banner">
-    <h1>DELUXE GYMNASTICS</h1>
-    <h2>El lujo de entrenar</h2>
+<header class="body__banner--contain">
+    <div class="body__banner__div--img">
+        <h1>DELUXE GYMNASTICS</h1>
+        <h2>El lujo de entrenar</h2>
+    </div>
 </header>
 
 <!--formulario-->
-        <form action="" method"post" Enctype"">
-            <div class="mb-3 container-fluid">
+<main class="contacto__main--contain">
+    <form action="" method= "post" Enctype="multipart/form-data">
+        <h1>CONTACTO</h1>
+        <div class="contacto__main__form--contain">
                 <!--datos personales-->
-                <div class="textForm">
-                    <label>Nombre</label>
-                        <input class="form-control"type="name" name="nombre" placeholder="escribi tu nombre" required> 
-                    <label>Apellido</label>
-                        <input class="form-control" type="name" name="apellido" placeholder="escribi tu apellido"required>
-                    <label>Telefono/Celular</label>
-                        <input class="form-control" type="name" name="telefono" placeholder="dejanos un numero de contacto" required>
-                    <label>E-mail</label>
-                        <input class="form-control" type="mail" name="mail" placeholder="ejemplo@ejemplo.com" required id="mailInput">
-                </div>
-                    <!--asociado o no-->                
-                <h6>¿Sos socio?</h6>
-                <div class="form-check">   
-                    <label>Si</label>
-                        <input class="form-check-input" type="radio" name="si" value="si">
-                </div>
-
-                <div class="form-check">     
-                    <label>No</label>
-                        <input class="form-check-input" type="radio" name="si" value="no">
-                </div>
-
+            <div class="contacto__main__form__div__div--contain">
+                <input class="form-control contacto__main__form__div__div__input--style" type="name" name="nombre" placeholder="Nombre" required> 
+                <input class="form-control contacto__main__form__div__div__input--style" type="name" name="apellido" placeholder="Apellido"required>
+                <input class="form-control contacto__main__form__div__div__input--style" type="name" name="telefono" placeholder="Numero de Telefono" required>
+                <input class="form-control contacto__main__form__div__div__input--style" type="mail" name="mail" placeholder="ejemplo@ejemplo.com" required id="mailInput">
                     <!--menu desplegable-->
                 <div class="textForm">
-                    <label>Motivos de contacto</label>
-                        <select class="form-select" name="motivos" required>
-                            <option value="--" selected disabled>--elija una opción--</option>
-                            <option value="precio"> Quiero consultar precios/planes</option>
-                            <option value="consulta"> Quiero realizar una consulta/sugerencia</option>
-                            <option value="reclamo">Quiero realizar un reclamo</option>
-                        </select>
+                    <select class="form-select contacto__main__form__div__div__select contacto__main__form__div__div__input--style" name="motivos" required>
+                        <option value="--" selected disabled>--Motivos del Contacto--</option>
+                        <option value="precio"> Quiero consultar precios/planes</option>
+                        <option value="consulta"> Quiero realizar una consulta/sugerencia</option>
+                        <option value="reclamo">Quiero realizar un reclamo</option>
+                    </select>
                 </div>
 
                     <!--novedades si o no-->
-                <div class="form-check form-switch">
-                    <input class="form-check-input" type="checkbox" name="acepta" value="si">
-                    <label class="form-check-label">Deseo recibir novedades</label>
-                </div>
-
                 <div>
-                    <label>Déjanos tu comentario</label>
-                    <textarea name="comentario" placeholder="Escribe aqui" cols="50" rows="10" ></textarea>
+                    <div class="form-check form-switch">
+                        <input class="form-check-input contacto__main__form__div__div__switch--style" type="checkbox" name="acepta" value="si">
+                        <label class="form-check-label">Deseo recibir novedades</label>
+                    </div>
                 </div>
+            </div>
 
+            <div class="contacto__main__form__div__div--textarea">
+                <textarea class="form-control contacto__main__form__div__div__input--style" name="comentario" placeholder="Escribe aqui" cols="50" rows="10" ></textarea>
+            </div>
+        </div>
                 <!--botones-->
-                <div>
-                    <input type="submit" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal" name="enviar" value="Enviar" id="enviar">
-
-                    <!-- Modal -->
-                    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                        <div class="modal-dialog">
-                            <div class="modal-content">
-                                <div class="modal-header">
-                                    <h5 class="modal-title tModal">¡GRACIAS POR ESCRIBIRNOS!</h5>
-                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">Cerrar</button>
-                                </div>
-                                <div class="modal-body mBody">
-                                    Gracias por escribirnos, en la brevedad nos pondremos en contactos con vos.
-                                </div>
+        <div class="contacto__main__form__div__div--botones">
+            <input type="submit" class="btn bttn--form" data-bs-toggle="modal" data-bs-target="#exampleModal" name="enviar" value="Enviar" id="enviar">
+                <!-- Modal -->
+                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title tModal">¡GRACIAS POR ESCRIBIRNOS!</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">Cerrar</button>
+                            </div>
+                            <div class="modal-body mBody">
+                                Gracias por escribirnos, en la brevedad nos pondremos en contactos con vos.
                             </div>
                         </div>
                     </div>
-
-                    <input type="reset" name="reset" id="enviar">
                 </div>
+            <input class="bttn__form--light" type="reset" name="reset" id="enviar">
+        </div>
+    </form>
+</main>
+<aside class="contacto__aside--contain">
+    <div class="contacto__aside__div--contain">
+        <h1>Encontranos tambien en:</h1>
+        <a class="contacto__aside__div__icon--style" href="https://www.instagram.com/deluxe_gymnastics/"><i class="bi bi-instagram">Instagram</i></a>
+        <a class="contacto__aside__div__icon--style" href="https://www.facebook.com/Deluxe-Gymnastics-Rosario-359676988188525"><i class="bi bi-facebook">Facebook</i></a>
+    </div>
 
-            </div>
-        </form>
+</aside>
 <!--finaliza formulario-->
 
 <footer class="body__footer-contain">

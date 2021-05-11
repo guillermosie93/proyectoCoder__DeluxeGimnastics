@@ -23,7 +23,26 @@ $table-hover-bg: $color-contraste;
 $table-hover-color: $color-principal-claro;
 $table-hover-bg-factor: .1;
 $border-table-color:$color-principal-claro;
+$carousel-control-color: $color-principal;
+$input-bg: $color-principal-claro;
+$input-color: $color-principal;
+$input-focus-box-shadow: none;
+$input-placeholder-color: $color-principal;
+$input-border-color: 2px solid $color-principal;
+$form-check-input-bg: $color-principal-claro;
+$form-check-input-checked-bg-color: $color-principal;
+$form-check-input-checked-bg:$color-principal;
+$form-check-input-focus-border: $color-principal;
+$form-check-input-checked-color: $color-principal;
+$form-select-indicator-color: $color-principal;
 
+
+
+
+::selection{
+    background-color: $color-contraste;
+    color: $color-contraste-claro;
+}
 
 @mixin bk-img($img,$position, $size, $repeat) {
     background-image: $img;
@@ -59,6 +78,13 @@ $index--card:(
     .card-#{$card--bk}{
         @include bk-img($card--img, center, cover, no-repeat);
     }    
+}
+
+.nav__div__div__ul__li--style{
+    a{
+    color: $color-principal-claro;
+    text-shadow: $sombra-dark;
+    }
 }
 
 .horarios__section__main__div__h1--estilo{
@@ -126,7 +152,7 @@ $index--card:(
         background-color: $color-principal-claro;
     }
 }
-
+/*horarios*/
 .table{
     background-image: $table-bg;
     color: $color-principal-claro;
@@ -138,6 +164,102 @@ $index--card:(
     color: $table-hover-color;
 }
 
+/*nosotros*/
+.nosotros__main__div__div__h4--card{
+    color: $color-principal;
+    text-shadow: $sombra-dark;
+    background-color: $color-principal-claro;
+    opacity: 75%;
+    border-radius: 20px;
+}
+.bttn--card{
+    color: $color-principal-claro;
+    background-color: $color-principal;
+    border-radius: 20px;
+}
+
+.bttn--card:hover{
+    background-color: $color-principal;
+    color: $color-principal-claro;
+}
+
+.bttn--card:active{
+    background-color: $color-principal;
+    color: $color-contraste;
+}
 
 
+.nosotros__main__div__div__card--style{
+    background-color: $color-principal-claro;
+    p{
+        color: $color-principal;
+    }
+    img{
+        border-radius: 20px;
+    }
+}
 
+/*novedades*/
+.novedades__main__h1--style{
+    color: $color-principal;
+    text-shadow: $sombra-dark;
+}
+
+.novedades__main__div__carrusel__text{
+    color: $color-principal;
+    text-shadow: $sombra-dark;
+}
+
+/*contactanos*/
+
+.contacto__main__form__div__div__input--style{
+    background-color: $input-bg;
+    color:$input-color;
+    font-weight: 900;
+    color: $input-placeholder-color;
+    border: none;
+}
+
+.contacto__main__form__div__div__input--style:focus{
+    background-color: $input-bg;
+    color:$color-principal;
+    box-shadow: $input-focus-box-shadow;
+    border: $input-border-color;
+}
+
+.contacto__main__form__div__div__switch--style{
+    background-color: $form-check-input-bg;
+}
+
+.form-check-label{
+    background-color: $color-principal;
+    color: $color-principal-claro;
+}
+
+.bttn--form{
+    background-color: $color-principal;
+    color: $color-principal-claro;
+    border-radius: 20px;
+    box-shadow: $sombra-dark;
+}
+
+.bttn--form:hover{
+        background-color: $color-principal-claro;
+        color: $color-principal;
+}
+
+.bttn__form--light{
+    background-color: $color-principal-claro;
+    color: $color-principal;
+    border-radius: 20px;
+    box-shadow: $sombra-dark;
+}
+
+.contacto__aside__div--contain{
+    background-color: $color-principal-claro;
+    border-radius: 20px;
+}
+.contacto__aside__div__icon--style{
+    color: $color-principal;
+    text-shadow: $sombra-dark;
+}

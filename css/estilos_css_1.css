@@ -1,5 +1,9 @@
 @charset "UTF-8";
 /*colores*/
+::selection {
+  background-color: #4974a5;
+  color: #B6C7DB; }
+
 /*solo letra-clara*/
 .index__main__div__div-text span {
   color: #eab4e9; }
@@ -44,6 +48,10 @@
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat; }
+
+.nav__div__div__ul__li--style a {
+  color: #eab4e9;
+  text-shadow: 3px 3px 4px black; }
 
 .horarios__section__main__div__h1--estilo {
   color: #eab4e9;
@@ -117,6 +125,7 @@
   background-repeat: repeat;
   background-color: #eab4e9; }
 
+/*horarios*/
 .table {
   background-image: linear-gradient(to bottom, #541e53, #040003);
   color: #eab4e9;
@@ -125,6 +134,88 @@
 .table-hover {
   background-color: #4974a5;
   color: #eab4e9; }
+
+/*nosotros*/
+.nosotros__main__div__div__h4--card {
+  color: #541e53;
+  text-shadow: 3px 3px 4px black;
+  background-color: #eab4e9;
+  opacity: 75%;
+  border-radius: 20px; }
+
+.bttn--card {
+  color: #eab4e9;
+  background-color: #541e53;
+  border-radius: 20px; }
+
+.bttn--card:hover {
+  background-color: #541e53;
+  color: #eab4e9; }
+
+.bttn--card:active {
+  background-color: #541e53;
+  color: #4974a5; }
+
+.nosotros__main__div__div__card--style {
+  background-color: #eab4e9; }
+  .nosotros__main__div__div__card--style p {
+    color: #541e53; }
+  .nosotros__main__div__div__card--style img {
+    border-radius: 20px; }
+
+/*novedades*/
+.novedades__main__h1--style {
+  color: #541e53;
+  text-shadow: 3px 3px 4px black; }
+
+.novedades__main__div__carrusel__text {
+  color: #541e53;
+  text-shadow: 3px 3px 4px black; }
+
+/*contactanos*/
+.contacto__main__form__div__div__input--style {
+  background-color: #eab4e9;
+  color: #541e53;
+  font-weight: 900;
+  color: #541e53;
+  border: none; }
+
+.contacto__main__form__div__div__input--style:focus {
+  background-color: #eab4e9;
+  color: #541e53;
+  box-shadow: none;
+  border: 2px solid #541e53; }
+
+.contacto__main__form__div__div__switch--style {
+  background-color: #eab4e9; }
+
+.form-check-label {
+  background-color: #541e53;
+  color: #eab4e9; }
+
+.bttn--form {
+  background-color: #541e53;
+  color: #eab4e9;
+  border-radius: 20px;
+  box-shadow: 3px 3px 4px black; }
+
+.bttn--form:hover {
+  background-color: #eab4e9;
+  color: #541e53; }
+
+.bttn__form--light {
+  background-color: #eab4e9;
+  color: #541e53;
+  border-radius: 20px;
+  box-shadow: 3px 3px 4px black; }
+
+.contacto__aside__div--contain {
+  background-color: #eab4e9;
+  border-radius: 20px; }
+
+.contacto__aside__div__icon--style {
+  color: #541e53;
+  text-shadow: 3px 3px 4px black; }
 
 /*font*/
 * {
@@ -143,6 +234,11 @@ h1, h2 {
 
 ul {
   list-style: none; }
+
+.nav__div__div__ul__li--style {
+  font-size: 1rem;
+  font-weight: 900;
+  text-align: center; }
 
 .body__banner__div--img h1, h2 {
   font-weight: 900; }
@@ -166,6 +262,30 @@ ul {
     font-weight: 900; }
   .body__footer__div-sitemap li {
     font-weight: 200; }
+
+.bttn--card {
+  font-weight: 900;
+  font-size: 4.5rem;
+  text-align: center; }
+
+.nosotros__main__div__div__card--style p {
+  font-size: 1rem;
+  font-weight: 900; }
+
+.novedades__main__div__carrusel__text h5 {
+  font-size: 1.5rem;
+  font-weight: 900; }
+
+.novedades__main__div__carrusel__text p {
+  font-size: 2.2rem;
+  font-weight: 900; }
+
+.contacto__main__form__div__div__input--style, .form-check-label, .bttn--form:hover, .bttn__form--light {
+  font-weight: 900; }
+
+.contacto__aside__div__icon--style {
+  font-size: 1.5rem;
+  font-weight: 900; }
 
 /*tamaños*/
 /*bloques-100% de pantalla*/
@@ -232,8 +352,22 @@ ul {
   height: 500px;
   width: 600px; }
 
+.nostros__main__div__div__headItem--contain, .nosotros__main__div__div__h4--card {
+  width: 100%; }
+
+.nosotros__main__div__div__card--style img {
+  height: 200px;
+  width: 200px; }
+
+.novedades__main__carrusel--style {
+  height: 400px;
+  width: 100%; }
+
+.contacto__main--contain {
+  width: 100%; }
+
 /*estructura*/
-@media only screen and (min-width: 320px) {
+@media only screen and (min-device-width: 320px) {
   .body--contain {
     display: flex;
     flex-flow: column nowrap;
@@ -269,6 +403,11 @@ ul {
     flex-flow: column nowrap;
     justify-content: center;
     align-content: center; }
+  .body__index--contain {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: stretch;
+    align-content: stretch; }
   .body__banner__div--img h1 {
     text-align: center; }
   .body__banner__div--img h2 {
@@ -284,7 +423,48 @@ ul {
     display: flex;
     flex-flow: column nowrap;
     justify-content: center;
-    align-content: center; } }
+    align-content: center; }
+  /*nostros*/
+  .nosotros__main__div__items--contain {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-content: center; }
+  .nostros__main__div__div__headItem--contain {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+    align-content: center; }
+  .nosotros__main__div__div__h4--card {
+    padding: 10px; }
+  .nosotros__main__div__div__card--style {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+    align-content: center;
+    padding: 10px; }
+  /*contacto*/
+  .contacto__main__form__div__div__input--style {
+    margin-top: 10px; }
+  .contacto__main__form--contain {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-content: space-around; }
+  .contacto__main__form__div__div__switch--style {
+    margin-top: 10px; }
+  .form-check-label {
+    margin-top: 10px; }
+  .contacto__main__form__div__div--botones {
+    margin-top: 10px; }
+  .bttn__form--light {
+    padding: 5px; }
+  .contacto__aside__div--contain {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-content: center;
+    margin-top: 10px; } }
 
 @media only screen and (min-width: 750px) {
   /*footer*/
@@ -317,14 +497,15 @@ ul {
     grid-area: profes; }
   .body__footer-contain {
     grid-area: footer; }
-  .body__index--contain {
+  .body__index--contain, body__contacto--contain {
     display: grid;
     grid-template-columns: 9fr 3fr;
     grid-template-rows: auto auto 1420px auto auto;
     grid-template-areas: "nav nav" "banner banner" "main profes" "mapa profes" "footer footer";
     justify-items: stretch;
     align-items: stretch;
-    grid-column-gap: 5px; }
+    grid-column-gap: 5px;
+    border: 4px solid blue; }
   /*index_aside*/
   .index__aside-contain {
     justify-self: stretch;
