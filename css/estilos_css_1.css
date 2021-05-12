@@ -504,8 +504,7 @@ ul {
     grid-template-areas: "nav nav" "banner banner" "main profes" "mapa profes" "footer footer";
     justify-items: stretch;
     align-items: stretch;
-    grid-column-gap: 5px;
-    border: 4px solid blue; }
+    grid-column-gap: 5px; }
   /*index_aside*/
   .index__aside-contain {
     justify-self: stretch;

@@ -80,6 +80,11 @@ $index--card:(
     }    
 }
 
+h1{
+    color: $color-principal;
+    text-shadow: $color-principal-claro;
+}
+
 .nav__div__div__ul__li--style{
     a{
     color: $color-principal-claro;
@@ -95,11 +100,11 @@ $index--card:(
 }
 
 .body--contain{
-    @include bk-img($bk-body, center, cover, repeat)
+    @include bk-img($bk-body, center, cover, repeat);
 }
 
 .body__banner--contain{
-    @include bk-img($bk-header, center, cover, no-repeat)
+    @include bk-img($bk-header, center, cover, no-repeat);
 }
 .body__banner__div--img h1, h2{
  text-shadow: $sombra-dark; 

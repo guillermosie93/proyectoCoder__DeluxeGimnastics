@@ -37,6 +37,11 @@ $espaciado-l: 100px;
     .body__footer__div-sitemap{
         display: none;
     }
+    
+    .horarios__section__main--contain{
+        margin-top: $espaciado-s;
+        @include flex-box(flex, column nowrap, center, center)
+    }
 
     .horarios__section__main--contain{
         margin-top: $espaciado-s;

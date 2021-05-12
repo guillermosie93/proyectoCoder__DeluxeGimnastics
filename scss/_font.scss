@@ -100,6 +100,13 @@ ul{
     @include font-type($font-m, $font-gruesa);
 }
 
+.table__tbody__th{
+    @include font-type($font-s, $font-gruesa);
+    font-family: montserrat;
+}
 
 
+.contacto__main__form__h1--style{
+    text-align: center;
+}
 

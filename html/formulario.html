@@ -3,8 +3,9 @@
 <head>
     <meta charset="utf-8">
     <title>Contactanos</title>
+    <link rel="shortcut icon" href="../media/dg.jpeg">
     <meta name="description" content="Contactate con nosotros, consultanos, danos sugerencia">
-    <meta name="keywords" content="formulario de contacto sugerencias consultas">
+    <meta name="keywords" content="formulario de contacto, sugerencias, consultas">
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">    
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
@@ -14,157 +15,154 @@
 </head>
 
 <body class="body--contain">
-<section class="body__contacto--contain">
 
-    <!--empieza el nav-->
-    <nav class="navbar fixed-top navbar-dark" style="background-color: #541e50; opacity: 85%;">
-        <div class="container-fluid divNav">
-            <a class="navbar-brand logoNav" href="index.html">DELUXE GYMNASTICS</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0 navList">
-                <li class="nav-item nav__div__div__ul__li--style">
-                    <a href="index.html"><i class="bi bi-house-door">HOME</i></a>
-                </li>
-                <li class="nav-item nav__div__div__ul__li--style">
-                    <a href="nosotros.html"><i class="bi bi-people">NOSOTROS</i></a>
-                </li>
-                <li class="nav-item nav__div__div__ul__li--style">
-                    <a href="fotos.html"><i class="bi bi-images">FOTOS</i></a>
-                </li>
-                <li class="nav-item nav__div__div__ul__li--style">
-                    <a href="horarios.html"><i class="bi bi-clock">HORARIOS</i></a>
-                </li>
-                <li class="nav-item nav__div__div__ul__li--style">
-                    <a href="novedades.html"><i class="bi bi-newspaper">NOVEDADES</i></a>
-                </li>
-                <li class="nav-item nav__div__div__ul__li--style">
-                    <a href="formulario.html"><i class="bi bi-envelope">CONTACTANOS</i></a>
-                </li>
-            </ul>
+    <section class="body__contacto--contain">
+        <!--empieza el nav-->
+        <nav class="navbar fixed-top navbar-dark" style="background-color: #541e50; opacity: 85%;">
+            <div class="container-fluid divNav">
+                <a class="navbar-brand logoNav" href="index.html">DELUXE GYMNASTICS</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0 navList">
+                    <li class="nav-item nav__div__div__ul__li--style">
+                        <a href="index.html"><i class="bi bi-house-door">HOME</i></a>
+                    </li>
+                    <li class="nav-item nav__div__div__ul__li--style">
+                        <a href="nosotros.html"><i class="bi bi-people">NOSOTROS</i></a>
+                    </li>
+                    <li class="nav-item nav__div__div__ul__li--style">
+                        <a href="fotos.html"><i class="bi bi-images">FOTOS</i></a>
+                    </li>
+                    <li class="nav-item nav__div__div__ul__li--style">
+                        <a href="horarios.html"><i class="bi bi-clock">HORARIOS</i></a>
+                    </li>
+                    <li class="nav-item nav__div__div__ul__li--style">
+                        <a href="formulario.html"><i class="bi bi-envelope">CONTACTANOS</i></a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+            <!--finaliza el nav-->
+
+    <!--banner-->
+    <header class="body__banner--contain">
+        <div class="body__banner__div--img">
+            <h1>DELUXE GYMNASTICS</h1>
+            <h2>El lujo de entrenar</h2>
         </div>
-    </nav>
-        <!--finaliza el nav-->
+    </header>
 
-<!--banner-->
-<header class="body__banner--contain">
-    <div class="body__banner__div--img">
-        <h1>DELUXE GYMNASTICS</h1>
-        <h2>El lujo de entrenar</h2>
-    </div>
-</header>
-
-<!--formulario-->
-<main class="contacto__main--contain">
-    <form action="" method= "post" Enctype="multipart/form-data">
-        <h1>CONTACTO</h1>
-        <div class="contacto__main__form--contain">
-                <!--datos personales-->
-            <div class="contacto__main__form__div__div--contain">
-                <input class="form-control contacto__main__form__div__div__input--style" type="name" name="nombre" placeholder="Nombre" required> 
-                <input class="form-control contacto__main__form__div__div__input--style" type="name" name="apellido" placeholder="Apellido"required>
-                <input class="form-control contacto__main__form__div__div__input--style" type="name" name="telefono" placeholder="Numero de Telefono" required>
-                <input class="form-control contacto__main__form__div__div__input--style" type="mail" name="mail" placeholder="ejemplo@ejemplo.com" required id="mailInput">
-                    <!--menu desplegable-->
-                <div class="textForm">
-                    <select class="form-select contacto__main__form__div__div__select contacto__main__form__div__div__input--style" name="motivos" required>
-                        <option value="--" selected disabled>--Motivos del Contacto--</option>
-                        <option value="precio"> Quiero consultar precios/planes</option>
-                        <option value="consulta"> Quiero realizar una consulta/sugerencia</option>
-                        <option value="reclamo">Quiero realizar un reclamo</option>
-                    </select>
-                </div>
-
-                    <!--novedades si o no-->
-                <div>
-                    <div class="form-check form-switch">
-                        <input class="form-check-input contacto__main__form__div__div__switch--style" type="checkbox" name="acepta" value="si">
-                        <label class="form-check-label">Deseo recibir novedades</label>
+    <!--formulario-->
+    <main class="contacto__main--contain">
+        <form action="" method= "post" Enctype="multipart/form-data">
+            <h1 class="contacto__main__form__h1--style">CONTACTO</h1>
+            <div class="contacto__main__form--contain">
+                    <!--datos personales-->
+                <div class="contacto__main__form__div__div--contain">
+                    <input class="form-control contacto__main__form__div__div__input--style" type="name" name="nombre" placeholder="Nombre" required> 
+                    <input class="form-control contacto__main__form__div__div__input--style" type="name" name="apellido" placeholder="Apellido"required>
+                    <input class="form-control contacto__main__form__div__div__input--style" type="name" name="telefono" placeholder="Numero de Telefono" required>
+                    <input class="form-control contacto__main__form__div__div__input--style" type="mail" name="mail" placeholder="ejemplo@ejemplo.com" required id="mailInput">
+                        <!--menu desplegable-->
+                    <div class="textForm">
+                        <select class="form-select contacto__main__form__div__div__select contacto__main__form__div__div__input--style" name="motivos" required>
+                            <option value="--" selected disabled>--Motivos del Contacto--</option>
+                            <option value="precio"> Quiero consultar precios/planes</option>
+                            <option value="consulta"> Quiero realizar una consulta/sugerencia</option>
+                            <option value="reclamo">Quiero realizar un reclamo</option>
+                        </select>
                     </div>
-                </div>
-            </div>
 
-            <div class="contacto__main__form__div__div--textarea">
-                <textarea class="form-control contacto__main__form__div__div__input--style" name="comentario" placeholder="Escribe aqui" cols="50" rows="10" ></textarea>
-            </div>
-        </div>
-                <!--botones-->
-        <div class="contacto__main__form__div__div--botones">
-            <input type="submit" class="btn bttn--form" data-bs-toggle="modal" data-bs-target="#exampleModal" name="enviar" value="Enviar" id="enviar">
-                <!-- Modal -->
-                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                    <div class="modal-dialog">
-                        <div class="modal-content">
-                            <div class="modal-header">
-                                <h5 class="modal-title tModal">¡GRACIAS POR ESCRIBIRNOS!</h5>
-                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">Cerrar</button>
-                            </div>
-                            <div class="modal-body mBody">
-                                Gracias por escribirnos, en la brevedad nos pondremos en contactos con vos.
-                            </div>
+                        <!--novedades si o no-->
+                    <div>
+                        <div class="form-check form-switch">
+                            <input class="form-check-input contacto__main__form__div__div__switch--style" type="checkbox" name="acepta" value="si">
+                            <label class="form-check-label">Deseo recibir novedades</label>
                         </div>
                     </div>
                 </div>
-            <input class="bttn__form--light" type="reset" name="reset" id="enviar">
+
+                <div class="contacto__main__form__div__div--textarea">
+                    <textarea class="form-control contacto__main__form__div__div__input--style" name="comentario" placeholder="Escribe aqui" cols="50" rows="10" ></textarea>
+                </div>
+            </div>
+                    <!--botones-->
+            <div class="contacto__main__form__div__div--botones">
+                <input type="submit" class="btn bttn--form" data-bs-toggle="modal" data-bs-target="#exampleModal" name="enviar" value="Enviar" id="enviar">
+                    <!-- Modal -->
+                    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title tModal">¡GRACIAS POR ESCRIBIRNOS!</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">Cerrar</button>
+                                </div>
+                                <div class="modal-body mBody">
+                                    Gracias por escribirnos, en la brevedad nos pondremos en contactos con vos.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                <input class="bttn__form--light" type="reset" name="reset" id="enviar">
+            </div>
+        </form>
+    </main>
+    <aside class="contacto__aside--contain">
+        <div class="contacto__aside__div--contain">
+            <h1>Encontranos tambien en:</h1>
+            <a class="contacto__aside__div__icon--style" href="https://www.instagram.com/deluxe_gymnastics/"><i class="bi bi-instagram">Instagram</i></a>
+            <a class="contacto__aside__div__icon--style" href="https://www.facebook.com/Deluxe-Gymnastics-Rosario-359676988188525"><i class="bi bi-facebook">Facebook</i></a>
         </div>
-    </form>
-</main>
-<aside class="contacto__aside--contain">
-    <div class="contacto__aside__div--contain">
-        <h1>Encontranos tambien en:</h1>
-        <a class="contacto__aside__div__icon--style" href="https://www.instagram.com/deluxe_gymnastics/"><i class="bi bi-instagram">Instagram</i></a>
-        <a class="contacto__aside__div__icon--style" href="https://www.facebook.com/Deluxe-Gymnastics-Rosario-359676988188525"><i class="bi bi-facebook">Facebook</i></a>
-    </div>
 
-</aside>
-<!--finaliza formulario-->
+    </aside>
+    <!--finaliza formulario-->
 
-<footer class="body__footer-contain">
-    <div class="body__footer__div-text">
-        <p>
-            Deluxe Gymnastics
-            Derechos reservados &copy 2021.
-            TEL: +54 0341 156503951
-        </p>   
-    </div>
+    <footer class="body__footer-contain">
+        <div class="body__footer__div-text">
+            <p>
+                Deluxe Gymnastics
+                Derechos reservados &copy 2021.
+                TEL: +54 0341 156503951
+            </p>   
+        </div>
 
-    <div class="body__footer__div-sitemap">
-        <ul>
-            <li><a href="nosotros.html">NOSOTROS</a>
-                <ul>
-                    <li>Nuestros Objetivos</li>
-                    <li>Nuestras instalaciones</li>
-                    <li>Nuestro equipo</li>
-                </ul>
-            </li>
-            <li><a href="fotos.html">GALERIA</a>
-                <ul>
-                    <li>fotos</li>
-                </ul>
-            </li>
-            <li><a href="horarios.html">HORARIOS</a>
-                <ul>
-                    <li>Horarios de adultos</li>
-                    <li>Horarios de niños</li>
-                </ul>
-            </li>
-            <li><a href="formulario.html">CONTACTANOS</a>
-                <ul>
-                    <li>Formulario de contacto</li>
-                </ul>
-            </li>
-        </ul>
-    </div>
+        <div class="body__footer__div-sitemap">
+            <ul>
+                <li><a href="nosotros.html">NOSOTROS</a>
+                    <ul>
+                        <li>Nuestros Objetivos</li>
+                        <li>Nuestras instalaciones</li>
+                        <li>Nuestro equipo</li>
+                    </ul>
+                </li>
+                <li><a href="fotos.html">GALERIA</a>
+                    <ul>
+                        <li>fotos</li>
+                    </ul>
+                </li>
+                <li><a href="horarios.html">HORARIOS</a>
+                    <ul>
+                        <li>Horarios de adultos</li>
+                        <li>Horarios de niños</li>
+                    </ul>
+                </li>
+                <li><a href="formulario.html">CONTACTANOS</a>
+                    <ul>
+                        <li>Formulario de contacto</li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
 
-    <div class="body__footer__div-icon">
-        <span class="d-inline-block" tabindex="0" data-bs-toggle="popover" data-bs-trigger="hover focus" data-bs-content="Disabled popover">  
-            <a href="https://www.facebook.com/Deluxe-Gymnastics-Rosario-359676988188525/"><i class="bi bi-facebook"></i></a>
-        </span>
-        <a href="https://www.instagram.com/deluxe_gymnastics/"><i class="bi bi-instagram"></i></a>
-    </div>   
-</footer>
-</section>
+        <div class="body__footer__div-icon">
+            <span class="d-inline-block" tabindex="0" data-bs-toggle="popover" data-bs-trigger="hover focus" data-bs-content="Disabled popover">  
+                <a href="https://www.facebook.com/Deluxe-Gymnastics-Rosario-359676988188525/"><i class="bi bi-facebook"></i></a>
+            </span>
+            <a href="https://www.instagram.com/deluxe_gymnastics/"><i class="bi bi-instagram"></i></a>
+        </div>   
+    </footer>
+    </section>
 </body>
 </html>
