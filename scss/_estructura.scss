@@ -18,6 +18,10 @@ $espaciado-l: 100px;
         }
     }
 
+    .index__main-contain{
+        margin-top: 15px;
+    }
+
     .body__index--contain{
         @include flex-box(flex,column nowrap , stretch, stretch);
     }
@@ -30,8 +34,13 @@ $espaciado-l: 100px;
             text-align: center;
         }
     }
+
     .index__main__div__div-text{
         padding-top: $espaciado-l + 140;
+    }
+
+    .index__aside__div-img{
+        @include flex-box(flex, row wrap, space-around, space-around);
     }
 
     .body__footer__div-text{
@@ -40,6 +49,10 @@ $espaciado-l: 100px;
 
     .body__footer__div-sitemap{
         display: none;
+    }
+
+    .body__footer__div-icon{
+        @include flex-box(flex, column nowrap, space-between, space-around);
     }
 
     .horarios__section__main--contain{
@@ -80,9 +93,10 @@ $espaciado-l: 100px;
 
     .contacto__main__form__div__div--botones{
         margin-top: $espaciado-s;
+        text-align: center;
     }
 
-    .bttn__form--light{
+    .form__btn--light{
         padding: $espaciado-s - 5;
     }
 
@@ -95,6 +109,9 @@ $espaciado-l: 100px;
 
 @media only screen and (min-width: 750px){
 
+    .contacto__main__form--contain{
+        @include flex-box(flex, column nowrap, stretch, center);
+    }
     /*footer*/
     $div-footer: (
         text: telefono,
@@ -139,7 +156,7 @@ $espaciado-l: 100px;
         }
     }
 
-    .body__index--contain, body__contacto--contain{
+    .body__index--contain{
         display: grid;
         grid-template-columns: 9fr 3fr;
         grid-template-rows: auto auto 1420px auto auto;
@@ -164,9 +181,7 @@ $espaciado-l: 100px;
         align-content: space-around;
     }
 
-    .index__aside__div-img{
-        @include flex-box(flex, column wrap, space-around, center);
-    }
+
 
     /*---fotos---*/
     .galeria__main--contain{
@@ -185,6 +200,12 @@ $espaciado-l: 100px;
         margin-left: $espaciado-l - 15;
     }
     
+}
+
+@media only screen and (min-device-width: 1024px){
+    .contacto__main__form--contain{
+        @include flex-box(flex, row wrap, space-around, space-around);
+    }
 }
 
 

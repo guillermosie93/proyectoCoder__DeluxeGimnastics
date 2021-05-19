@@ -5,7 +5,7 @@ $color-principal: #541e53;
 $color-contraste: #4974a5;
 $color-principal-claro: $color-principal + 150;
 $color-contraste-claro: #B6C7DB;
-$sombra-dark: 3px 3px 4px black;
+$sombra-dark: 3px 3px 3px black;
 $sombra-light: 3px 3px 4px $color-principal-claro;
 $degradado-principal-transparente: linear-gradient(to bottom, transparent, $color-principal);
 $degradado-principal-light: linear-gradient(to bottom, #ffffff, $color-principal);
@@ -27,7 +27,8 @@ $carousel-control-color: $color-principal;
 $input-bg: $color-principal-claro;
 $input-color: $color-principal;
 $input-focus-box-shadow: none;
-$input-placeholder-color: $color-principal;
+$gray-600: $color-principal;
+$input-placeholder-color: $gray-600;
 $input-border-color: 2px solid $color-principal;
 $form-check-input-bg: $color-principal-claro;
 $form-check-input-checked-bg-color: $color-principal;
@@ -35,7 +36,8 @@ $form-check-input-checked-bg:$color-principal;
 $form-check-input-focus-border: $color-principal;
 $form-check-input-checked-color: $color-principal;
 $form-select-indicator-color: $color-principal;
-
+$navbar-dark-brand-color: $color-principal;
+$input-color: $color-principal;
 
 
 
@@ -77,6 +79,7 @@ $index--card:(
 @each $card--bk, $card--img in $index--card {
     .card-#{$card--bk}{
         @include bk-img($card--img, center, cover, no-repeat);
+        margin-bottom: 5px;
     }    
 }
 
@@ -85,11 +88,19 @@ h1{
     text-shadow: $color-principal-claro;
 }
 
+.body__nav__div__logo--style{
+    color: $navbar-dark-brand-color !important;
+    background-color: $color-contraste-claro;
+    border-radius: 20px;
+    text-shadow: $color-contraste;
+}
+
 .nav__div__div__ul__li--style{
-    a{
-    color: $color-principal-claro;
-    text-shadow: $sombra-dark;
-    }
+    padding: 6.5px;
+        a{
+        color: $color-contraste-claro;
+        text-shadow: $sombra-dark;
+        }
 }
 
 .horarios__section__main__div__h1--estilo{
@@ -107,9 +118,8 @@ h1{
     @include bk-img($bk-header, center, cover, no-repeat);
 }
 .body__banner__div--img h1, h2{
- text-shadow: $sombra-dark; 
+ text-shadow: $sombra-dark;
 }
-
 
 .index__main__div__div-degradado{
     background-image: $degradado-principal-transparente;
@@ -174,7 +184,7 @@ h1{
     color: $color-principal;
     text-shadow: $sombra-dark;
     background-color: $color-principal-claro;
-    opacity: 75%;
+    opacity: 90%;
     border-radius: 20px;
 }
 .bttn--card{
@@ -204,17 +214,6 @@ h1{
     }
 }
 
-/*novedades*/
-.novedades__main__h1--style{
-    color: $color-principal;
-    text-shadow: $sombra-dark;
-}
-
-.novedades__main__div__carrusel__text{
-    color: $color-principal;
-    text-shadow: $sombra-dark;
-}
-
 /*contactanos*/
 
 .contacto__main__form__div__div__input--style{
@@ -241,23 +240,27 @@ h1{
     color: $color-principal-claro;
 }
 
-.bttn--form{
+.form__btn--dark{
     background-color: $color-principal;
     color: $color-principal-claro;
     border-radius: 20px;
     box-shadow: $sombra-dark;
 }
 
-.bttn--form:hover{
+.form__btn--dark:hover{
         background-color: $color-principal-claro;
         color: $color-principal;
 }
 
-.bttn__form--light{
+.form__btn--light{
     background-color: $color-principal-claro;
     color: $color-principal;
     border-radius: 20px;
     box-shadow: $sombra-dark;
+}
+.form__btn--light:hover{
+    background-color: $color-principal;
+    color: $color-principal-claro;
 }
 
 .contacto__aside__div--contain{
@@ -266,5 +269,13 @@ h1{
 }
 .contacto__aside__div__icon--style{
     color: $color-principal;
+}
+
+.contacto__aside__div__icon--style:hover{
+    color:$color-principal
+}
+
+.contacto__main__form__h1--style{
+    color: $color-contraste;
     text-shadow: $sombra-dark;
 }

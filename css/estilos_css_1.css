@@ -29,33 +29,49 @@
   background-image: url(../media/clase_02.jpg);
   background-position: center;
   background-size: cover;
-  background-repeat: no-repeat; }
+  background-repeat: no-repeat;
+  margin-bottom: 5px; }
 
 .card-horario {
   background-image: url(../media/horarios.jpg);
   background-position: center;
   background-size: cover;
-  background-repeat: no-repeat; }
+  background-repeat: no-repeat;
+  margin-bottom: 5px; }
 
 .card-nov {
   background-image: url(../media/clase_4.jpg);
   background-position: center;
   background-size: cover;
-  background-repeat: no-repeat; }
+  background-repeat: no-repeat;
+  margin-bottom: 5px; }
 
 .card-form {
   background-image: url(../media/salon_2.jpg);
   background-position: center;
   background-size: cover;
-  background-repeat: no-repeat; }
+  background-repeat: no-repeat;
+  margin-bottom: 5px; }
 
-.nav__div__div__ul__li--style a {
-  color: #eab4e9;
-  text-shadow: 3px 3px 4px black; }
+h1 {
+  color: #541e53;
+  text-shadow: #eab4e9; }
+
+.body__nav__div__logo--style {
+  color: #541e53 !important;
+  background-color: #B6C7DB;
+  border-radius: 20px;
+  text-shadow: #4974a5; }
+
+.nav__div__div__ul__li--style {
+  padding: 6.5px; }
+  .nav__div__div__ul__li--style a {
+    color: #B6C7DB;
+    text-shadow: 3px 3px 3px black; }
 
 .horarios__section__main__div__h1--estilo {
   color: #eab4e9;
-  text-shadow: 3px 3px 4px black;
+  text-shadow: 3px 3px 3px black;
   text-align: center;
   background-color: #541e53; }
 
@@ -72,14 +88,14 @@
   background-repeat: no-repeat; }
 
 .body__banner__div--img h1, h2 {
-  text-shadow: 3px 3px 4px black; }
+  text-shadow: 3px 3px 3px black; }
 
 .index__main__div__div-degradado {
   background-image: linear-gradient(to bottom, transparent, #541e53); }
 
 .index__main__div__div-text a {
   color: #eab4e9;
-  text-shadow: 3px 3px 4px black;
+  text-shadow: 3px 3px 3px black;
   background-color: #4974a5;
   opacity: 50%; }
 
@@ -102,7 +118,7 @@
 /*fotos*/
 .bttn--img {
   padding: 0px;
-  box-shadow: 3px 3px 4px black; }
+  box-shadow: 3px 3px 3px black; }
 
 .modal-header {
   background-image: url(../media/fondo.png);
@@ -138,9 +154,9 @@
 /*nosotros*/
 .nosotros__main__div__div__h4--card {
   color: #541e53;
-  text-shadow: 3px 3px 4px black;
+  text-shadow: 3px 3px 3px black;
   background-color: #eab4e9;
-  opacity: 75%;
+  opacity: 90%;
   border-radius: 20px; }
 
 .bttn--card {
@@ -163,15 +179,6 @@
   .nosotros__main__div__div__card--style img {
     border-radius: 20px; }
 
-/*novedades*/
-.novedades__main__h1--style {
-  color: #541e53;
-  text-shadow: 3px 3px 4px black; }
-
-.novedades__main__div__carrusel__text {
-  color: #541e53;
-  text-shadow: 3px 3px 4px black; }
-
 /*contactanos*/
 .contacto__main__form__div__div__input--style {
   background-color: #eab4e9;
@@ -193,29 +200,39 @@
   background-color: #541e53;
   color: #eab4e9; }
 
-.bttn--form {
+.form__btn--dark {
   background-color: #541e53;
   color: #eab4e9;
   border-radius: 20px;
-  box-shadow: 3px 3px 4px black; }
+  box-shadow: 3px 3px 3px black; }
 
-.bttn--form:hover {
+.form__btn--dark:hover {
   background-color: #eab4e9;
   color: #541e53; }
 
-.bttn__form--light {
+.form__btn--light {
   background-color: #eab4e9;
   color: #541e53;
   border-radius: 20px;
-  box-shadow: 3px 3px 4px black; }
+  box-shadow: 3px 3px 3px black; }
+
+.form__btn--light:hover {
+  background-color: #541e53;
+  color: #eab4e9; }
 
 .contacto__aside__div--contain {
   background-color: #eab4e9;
   border-radius: 20px; }
 
 .contacto__aside__div__icon--style {
-  color: #541e53;
-  text-shadow: 3px 3px 4px black; }
+  color: #541e53; }
+
+.contacto__aside__div__icon--style:hover {
+  color: #541e53; }
+
+.contacto__main__form__h1--style {
+  color: #4974a5;
+  text-shadow: 3px 3px 3px black; }
 
 /*font*/
 * {
@@ -235,8 +252,11 @@ h1, h2 {
 ul {
   list-style: none; }
 
+.body__nav__div__logo--style {
+  font-weight: 900; }
+
 .nav__div__div__ul__li--style {
-  font-size: 1rem;
+  font-size: 1.5rem;
   font-weight: 900;
   text-align: center; }
 
@@ -256,6 +276,10 @@ ul {
 .body__footer__div-text p {
   font-size: 1.2rem; }
 
+.body__footer__div-icon a {
+  font-size: 2rem;
+  text-shadow: none; }
+
 .body__footer__div-sitemap {
   list-style: none; }
   .body__footer__div-sitemap li a {
@@ -263,6 +287,7 @@ ul {
   .body__footer__div-sitemap li {
     font-weight: 200; }
 
+.di
 .bttn--card {
   font-weight: 900;
   font-size: 4.5rem;
@@ -285,6 +310,19 @@ ul {
 
 .contacto__aside__div__icon--style {
   font-size: 1.5rem;
+  font-weight: 900; }
+
+.table__tbody__th {
+  font-size: 1rem;
+  font-weight: 900;
+  font-family: montserrat; }
+
+.contacto__main__form__h1--style {
+  text-align: center;
+  font-weight: 900;
+  color: 900; }
+
+.form__btn--dark, .form__btn--light {
   font-weight: 900; }
 
 /*tamaños*/
@@ -333,10 +371,11 @@ ul {
 
 .index__aside__div-img {
   height: 100%; }
-  .index__aside__div-img img {
-    border-radius: 50%;
-    height: 200px;
-    width: 200px; }
+
+.index__aside__div__img--style {
+  border-radius: 50%;
+  height: 100px;
+  width: 100px; }
 
 .body__footer-contain {
   height: 400px; }
@@ -365,6 +404,28 @@ ul {
 
 .contacto__main--contain {
   width: 100%; }
+
+.contacto__main__form__div__div__input--style {
+  border: 2px solid #541e53; }
+
+@media only screen and (min-device-width: 750px) {
+  .contacto__main--contain {
+    width: 100%; }
+  .contacto__main__form__div__div__input--style {
+    width: 100%;
+    border: 2px solid #541e53; }
+  .index__aside__div-img {
+    height: 100%; }
+  .index__aside__div__img--style {
+    border-radius: 50%;
+    height: 150px;
+    width: 150px; } }
+
+@media only screen and (min-device-width: 1024px) {
+  .index__aside__div__img--style {
+    border-radius: 50%;
+    height: 200px;
+    width: 200px; } }
 
 /*estructura*/
 @media only screen and (min-device-width: 320px) {
@@ -403,6 +464,8 @@ ul {
     flex-flow: column nowrap;
     justify-content: center;
     align-content: center; }
+  .index__main-contain {
+    margin-top: 15px; }
   .body__index--contain {
     display: flex;
     flex-flow: column nowrap;
@@ -414,10 +477,20 @@ ul {
     text-align: center; }
   .index__main__div__div-text {
     padding-top: 240px; }
+  .index__aside__div-img {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-content: space-around; }
   .body__footer__div-text {
     padding-top: 20px; }
   .body__footer__div-sitemap {
     display: none; }
+  .body__footer__div-icon {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+    align-content: space-around; }
   .horarios__section__main--contain {
     margin-top: 10px;
     display: flex;
@@ -456,8 +529,9 @@ ul {
   .form-check-label {
     margin-top: 10px; }
   .contacto__main__form__div__div--botones {
-    margin-top: 10px; }
-  .bttn__form--light {
+    margin-top: 10px;
+    text-align: center; }
+  .form__btn--light {
     padding: 5px; }
   .contacto__aside__div--contain {
     display: flex;
@@ -467,6 +541,11 @@ ul {
     margin-top: 10px; } }
 
 @media only screen and (min-width: 750px) {
+  .contacto__main__form--contain {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: stretch;
+    align-content: center; }
   /*footer*/
   .body__footer__div-text {
     grid-area: telefono; }
@@ -497,7 +576,7 @@ ul {
     grid-area: profes; }
   .body__footer-contain {
     grid-area: footer; }
-  .body__index--contain, body__contacto--contain {
+  .body__index--contain {
     display: grid;
     grid-template-columns: 9fr 3fr;
     grid-template-rows: auto auto 1420px auto auto;
@@ -513,11 +592,6 @@ ul {
     flex-flow: column nowrap;
     justify-content: center;
     align-content: space-around; }
-  .index__aside__div-img {
-    display: flex;
-    flex-flow: column wrap;
-    justify-content: space-around;
-    align-content: center; }
   /*---fotos---*/
   .galeria__main--contain {
     display: grid;
@@ -532,26 +606,34 @@ ul {
   .galeria__main__div__modal__img-tamano {
     margin-left: 85px; } }
 
+@media only screen and (min-device-width: 1024px) {
+  .contacto__main__form--contain {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-content: space-around; } }
+
 /*animaciones*/
-@keyframes banner__h1h2__animation {
+@keyframes body__header__h1-h2__animation {
   0% {
-    color: #DB9CD9;
-    text-shadow: 3px 3px 4px #541e53; }
+    color: #B6C7DB;
+    text-shadow: 3px 3px 4px #4974a5; }
   25% {
-    color: #541e53;
-    text-shadow: 2px 2px 3px #DB9CD9; }
+    color: #4974a5;
+    text-shadow: 2px 2px 3px #b6c7db; }
   50% {
-    color: #DB9CD9;
-    text-shadow: 3px 3px 4px #541e53; }
+    color: #b6c7db;
+    text-shadow: 3px 3px 4px #4974a5; }
   75% {
-    color: #541e53; }
+    color: #4974a5;
+    text-shadow: 2px 2px 3px #b6c7db; }
   100% {
-    color: #DB9CD9;
-    text-shadow: 3px 3px 4px #541e53; } }
+    color: #b6c7db;
+    text-shadow: 3px 3px 4px #4974a5; } }
 
 .body__banner__div--img h1, h2 {
-  animation-name: banner__h1h2__animation;
+  animation-name: body__header__h1-h2__animation;
   animation-iteration-count: infinite;
   animation-timing-function: ease-in;
-  animation-duration: 5s;
+  animation-duration: 2s;
   animation-delay: 0s; }

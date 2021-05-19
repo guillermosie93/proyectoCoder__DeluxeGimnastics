@@ -1,25 +1,29 @@
 /*animaciones*/
-$color-principal: #541e53;
-$color-principal-claro: #DB9CD9;
+$color-principal: #4974a5;
+$color-principal-claro: #b6c7db;
 $sombra-light: 2px 2px 3px $color-principal-claro;
 $sombra-dark: 3px 3px 4px $color-principal;
 
-@keyframes banner__h1h2__animation {
-    0%{ color: $color-principal-claro;
+
+@keyframes body__header__h1-h2__animation {
+    0%{ color: $color-contraste-claro;
         text-shadow: $sombra-dark;}
     25%{ color:$color-principal;
         text-shadow: $sombra-light;}
     50%{ color: $color-principal-claro;
         text-shadow: $sombra-dark;}
-    75%{ color: $color-principal}
+    75%{ color: $color-principal;
+        text-shadow: $sombra-light;}
     100%{ color:$color-principal-claro;
         text-shadow: $sombra-dark;}
  }
 
  .body__banner__div--img h1, h2{
-    animation-name: banner__h1h2__animation;
+    animation-name: body__header__h1-h2__animation;
     animation-iteration-count: infinite;
     animation-timing-function: ease-in;
-    animation-duration: 5s;
+    animation-duration: 2s;
     animation-delay: 0s;        
+    
 }
+

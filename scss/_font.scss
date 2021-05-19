@@ -6,6 +6,7 @@ $font-xl: 3rem;
 $font-l: 2.2rem;
 $font-m: 1.5rem;
 $font-s:1rem;
+$input-font-weight: $font-gruesa;
 
 @mixin font-type($size, $grosor,) {
     font-size: $size;
@@ -33,8 +34,12 @@ ul{
     list-style: none;
 }
 
+.body__nav__div__logo--style{
+    font-weight: $font-gruesa;
+}
+
 .nav__div__div__ul__li--style{
-    @include font-type($font-s, $font-gruesa);
+    @include font-type($font-m, $font-gruesa);
     text-align: center;
 }
 
@@ -61,6 +66,13 @@ ul{
     }
 }
 
+.body__footer__div-icon{
+    a{
+        font-size: 2rem;
+        text-shadow: none;
+    }
+}
+
 .body__footer__div-sitemap{
     list-style: none;
         li a{
@@ -70,6 +82,8 @@ ul{
             font-weight: 200;
         }
 }
+
+.di
 
 .bttn--card{
     font-weight: $font-gruesa;
@@ -108,5 +122,11 @@ ul{
 
 .contacto__main__form__h1--style{
     text-align: center;
+    font-weight: $font-gruesa;
+    color: $input-font-weight;
+}
+
+.form__btn--dark, .form__btn--light{
+    font-weight: $font-gruesa;
 }
 
