@@ -67,11 +67,11 @@ h1 {
   padding: 6.5px; }
   .nav__div__div__ul__li--style a {
     color: #B6C7DB;
-    text-shadow: 3px 3px 3px black; }
+    text-shadow: 2px 2px 2px black; }
 
 .horarios__section__main__div__h1--estilo {
   color: #eab4e9;
-  text-shadow: 3px 3px 3px black;
+  text-shadow: 2px 2px 2px black;
   text-align: center;
   background-color: #541e53; }
 
@@ -88,14 +88,14 @@ h1 {
   background-repeat: no-repeat; }
 
 .body__banner__div--img h1, h2 {
-  text-shadow: 3px 3px 3px black; }
+  text-shadow: 2px 2px 2px black; }
 
 .index__main__div__div-degradado {
   background-image: linear-gradient(to bottom, transparent, #541e53); }
 
 .index__main__div__div-text a {
   color: #eab4e9;
-  text-shadow: 3px 3px 3px black;
+  text-shadow: 2px 2px 2px black;
   background-color: #4974a5;
   opacity: 50%; }
 
@@ -118,7 +118,7 @@ h1 {
 /*fotos*/
 .bttn--img {
   padding: 0px;
-  box-shadow: 3px 3px 3px black; }
+  box-shadow: 2px 2px 2px black; }
 
 .modal-header {
   background-image: url(../media/fondo.png);
@@ -153,8 +153,7 @@ h1 {
 
 /*nosotros*/
 .nosotros__main__div__div__h4--card {
-  color: #541e53;
-  text-shadow: 3px 3px 3px black;
+  color: #000000;
   background-color: #eab4e9;
   opacity: 90%;
   border-radius: 20px; }
@@ -204,7 +203,7 @@ h1 {
   background-color: #541e53;
   color: #eab4e9;
   border-radius: 20px;
-  box-shadow: 3px 3px 3px black; }
+  box-shadow: 2px 2px 2px black; }
 
 .form__btn--dark:hover {
   background-color: #eab4e9;
@@ -214,7 +213,7 @@ h1 {
   background-color: #eab4e9;
   color: #541e53;
   border-radius: 20px;
-  box-shadow: 3px 3px 3px black; }
+  box-shadow: 2px 2px 2px black; }
 
 .form__btn--light:hover {
   background-color: #541e53;
@@ -232,7 +231,7 @@ h1 {
 
 .contacto__main__form__h1--style {
   color: #4974a5;
-  text-shadow: 3px 3px 3px black; }
+  text-shadow: 2px 2px 2px black; }
 
 /*font*/
 * {
