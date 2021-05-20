@@ -65,7 +65,7 @@ $color-principal: #541e53;
 .nostros__main__div__div__headItem--contain, .nosotros__main__div__div__h4--card{
     width: $estructura-resp;
 }
-.nosotros__main__div__div__card--style{
+.nosotros__main__div__div__card--style, .nosotros__main__div__div__collapse--contain{
     img{
         @include alto-ancho($estructura-M, $estructura-M)
     };
@@ -81,6 +81,7 @@ $color-principal: #541e53;
 .contacto__main__form__div__div__input--style{
     border: 2px solid $color-principal;
 }
+
 
 @media only screen and (min-device-width: 750px){
     .contacto__main--contain{

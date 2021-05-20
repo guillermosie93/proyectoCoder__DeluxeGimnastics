@@ -75,20 +75,21 @@ ul{
 
 .body__footer__div-sitemap{
     list-style: none;
-        li a{
-            font-weight: $font-gruesa;
-        }
-        li{
-            font-weight: 200;
-        }
+    li a{
+        font-weight: $font-gruesa;
+    }
+    li{
+        font-weight: 200;
+    }
 }
-
-.di
 
 .bttn--card{
     font-weight: $font-gruesa;
-    font-size: $font-xl + 1.5;
-    text-align: center;
+    font-size: $font-l;
+}
+
+.nosotros__main__div__div__collapse--contain{
+    @include font-type($font-s, $font-gruesa);
 }
 
 .nosotros__main__div__div__card--style{

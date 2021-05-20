@@ -5,7 +5,7 @@ $color-principal: #541e53;
 $color-contraste: #4974a5;
 $color-principal-claro: $color-principal + 150;
 $color-contraste-claro: #B6C7DB;
-$sombra-dark: 2px 2px 2px black;
+$sombra-dark: 2px 2px 4px black;
 $sombra-light: 3px 3px 4px $color-principal-claro;
 $degradado-principal-transparente: linear-gradient(to bottom, transparent, $color-principal);
 $degradado-principal-light: linear-gradient(to bottom, #ffffff, $color-principal);
@@ -180,33 +180,34 @@ h1{
 }
 
 /*nosotros*/
-.nosotros__main__div__div__h4--card{
-    color: #000000;
-    background-color: $color-principal-claro;
-    opacity: 90%;
-    border-radius: 20px;
+.nosotros__main__div__div__collapse--contain{
+    color: $color-principal;
+    opacity: 70%;
+
 }
+.nosotros__main__div__items--contain{
+    background-color: $color-principal-claro;
+}
+
 .bttn--card{
-    color: $color-principal-claro;
-    background-color: $color-principal;
-    border-radius: 20px;
+    color: $color-principal;
+    background-color:transparent;
 }
 
 .bttn--card:hover{
-    background-color: $color-principal;
-    color: $color-principal-claro;
+    color: $color-contraste;
 }
 
 .bttn--card:active{
-    background-color: $color-principal;
-    color: $color-contraste;
+    color: $color-contraste-claro;
+    background-color:transparent;
 }
 
 
 .nosotros__main__div__div__card--style{
-    background-color: $color-principal-claro;
+    background-color: transparent;
     p{
-        color: $color-principal;
+        color: #000000;
     }
     img{
         border-radius: 20px;

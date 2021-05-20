@@ -67,11 +67,11 @@ h1 {
   padding: 6.5px; }
   .nav__div__div__ul__li--style a {
     color: #B6C7DB;
-    text-shadow: 2px 2px 2px black; }
+    text-shadow: 2px 2px 4px black; }
 
 .horarios__section__main__div__h1--estilo {
   color: #eab4e9;
-  text-shadow: 2px 2px 2px black;
+  text-shadow: 2px 2px 4px black;
   text-align: center;
   background-color: #541e53; }
 
@@ -88,14 +88,14 @@ h1 {
   background-repeat: no-repeat; }
 
 .body__banner__div--img h1, h2 {
-  text-shadow: 2px 2px 2px black; }
+  text-shadow: 2px 2px 4px black; }
 
 .index__main__div__div-degradado {
   background-image: linear-gradient(to bottom, transparent, #541e53); }
 
 .index__main__div__div-text a {
   color: #eab4e9;
-  text-shadow: 2px 2px 2px black;
+  text-shadow: 2px 2px 4px black;
   background-color: #4974a5;
   opacity: 50%; }
 
@@ -118,7 +118,7 @@ h1 {
 /*fotos*/
 .bttn--img {
   padding: 0px;
-  box-shadow: 2px 2px 2px black; }
+  box-shadow: 2px 2px 4px black; }
 
 .modal-header {
   background-image: url(../media/fondo.png);
@@ -152,29 +152,28 @@ h1 {
   color: #eab4e9; }
 
 /*nosotros*/
-.nosotros__main__div__div__h4--card {
-  color: #000000;
-  background-color: #eab4e9;
-  opacity: 90%;
-  border-radius: 20px; }
+.nosotros__main__div__div__collapse--contain {
+  color: #541e53;
+  opacity: 70%; }
+
+.nosotros__main__div__items--contain {
+  background-color: #eab4e9; }
 
 .bttn--card {
-  color: #eab4e9;
-  background-color: #541e53;
-  border-radius: 20px; }
+  color: #541e53;
+  background-color: transparent; }
 
 .bttn--card:hover {
-  background-color: #541e53;
-  color: #eab4e9; }
-
-.bttn--card:active {
-  background-color: #541e53;
   color: #4974a5; }
 
+.bttn--card:active {
+  color: #B6C7DB;
+  background-color: transparent; }
+
 .nosotros__main__div__div__card--style {
-  background-color: #eab4e9; }
+  background-color: transparent; }
   .nosotros__main__div__div__card--style p {
-    color: #541e53; }
+    color: #000000; }
   .nosotros__main__div__div__card--style img {
     border-radius: 20px; }
 
@@ -203,7 +202,7 @@ h1 {
   background-color: #541e53;
   color: #eab4e9;
   border-radius: 20px;
-  box-shadow: 2px 2px 2px black; }
+  box-shadow: 2px 2px 4px black; }
 
 .form__btn--dark:hover {
   background-color: #eab4e9;
@@ -213,7 +212,7 @@ h1 {
   background-color: #eab4e9;
   color: #541e53;
   border-radius: 20px;
-  box-shadow: 2px 2px 2px black; }
+  box-shadow: 2px 2px 4px black; }
 
 .form__btn--light:hover {
   background-color: #541e53;
@@ -231,7 +230,7 @@ h1 {
 
 .contacto__main__form__h1--style {
   color: #4974a5;
-  text-shadow: 2px 2px 2px black; }
+  text-shadow: 2px 2px 4px black; }
 
 /*font*/
 * {
@@ -286,11 +285,13 @@ ul {
   .body__footer__div-sitemap li {
     font-weight: 200; }
 
-.di
 .bttn--card {
   font-weight: 900;
-  font-size: 4.5rem;
-  text-align: center; }
+  font-size: 2.2rem; }
+
+.nosotros__main__div__div__collapse--contain {
+  font-size: 1rem;
+  font-weight: 900; }
 
 .nosotros__main__div__div__card--style p {
   font-size: 1rem;
@@ -393,7 +394,7 @@ ul {
 .nostros__main__div__div__headItem--contain, .nosotros__main__div__div__h4--card {
   width: 100%; }
 
-.nosotros__main__div__div__card--style img {
+.nosotros__main__div__div__card--style img, .nosotros__main__div__div__collapse--contain img {
   height: 200px;
   width: 200px; }
 
@@ -497,18 +498,6 @@ ul {
     justify-content: center;
     align-content: center; }
   /*nostros*/
-  .nosotros__main__div__items--contain {
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: space-around;
-    align-content: center; }
-  .nostros__main__div__div__headItem--contain {
-    display: flex;
-    flex-flow: row nowrap;
-    justify-content: space-around;
-    align-content: center; }
-  .nosotros__main__div__div__h4--card {
-    padding: 10px; }
   .nosotros__main__div__div__card--style {
     display: flex;
     flex-flow: row nowrap;

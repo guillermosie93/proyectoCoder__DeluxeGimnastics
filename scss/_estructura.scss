@@ -61,17 +61,6 @@ $espaciado-l: 100px;
     }
 
     /*nostros*/
-    .nosotros__main__div__items--contain{
-        @include flex-box(flex, row wrap, space-around, center)
-    }
-
-    .nostros__main__div__div__headItem--contain{
-        @include flex-box(flex, row nowrap, space-around, center);
-    }
-    .nosotros__main__div__div__h4--card{
-        padding: $espaciado-s;
-    }
-
     .nosotros__main__div__div__card--style{
         @include flex-box(flex, row nowrap, space-around, center);
         padding: $espaciado-s;
