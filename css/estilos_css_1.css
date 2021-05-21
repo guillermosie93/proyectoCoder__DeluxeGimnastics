@@ -153,15 +153,20 @@ h1 {
 
 /*nosotros*/
 .nosotros__main__div__div__collapse--contain {
-  color: #541e53;
-  opacity: 70%; }
+  color: #541e53; }
 
 .nosotros__main__div__items--contain {
-  background-color: #eab4e9; }
+  background-color: #ffffff; }
 
 .bttn--card {
   color: #541e53;
-  background-color: transparent; }
+  background-color: #eab4e9; }
+
+.bttn--card:focus {
+  box-shadow: none;
+  border-color: #eab4e9;
+  background-color: #eab4e9;
+  color: #541e53; }
 
 .bttn--card:hover {
   color: #4974a5; }
@@ -219,18 +224,22 @@ h1 {
   color: #eab4e9; }
 
 .contacto__aside__div--contain {
-  background-color: #eab4e9;
-  border-radius: 20px; }
+  background-color: #541e53; }
 
-.contacto__aside__div__icon--style {
-  color: #541e53; }
-
-.contacto__aside__div__icon--style:hover {
-  color: #541e53; }
+.contacto__aside__div__h1--style {
+  color: #eab4e9;
+  text-shadow: 3px 3px 4px #eab4e9; }
 
 .contacto__main__form__h1--style {
-  color: #4974a5;
-  text-shadow: 2px 2px 4px black; }
+  color: #eab4e9;
+  text-shadow: 2px 2px 4px black;
+  background-color: #541e53; }
+
+.icon--ig {
+  color: #dd2a7b; }
+
+.icon--fb {
+  color: #3b5998; }
 
 /*font*/
 * {
@@ -309,8 +318,13 @@ ul {
   font-weight: 900; }
 
 .contacto__aside__div__icon--style {
-  font-size: 1.5rem;
-  font-weight: 900; }
+  font-size: 2.2rem;
+  font-weight: 900;
+  font-family: Arial, Helvetica, sans-serif; }
+
+.contacto__aside__div__h1--style {
+  font-size: 2.2rem;
+  padding: 15px; }
 
 .table__tbody__th {
   font-size: 1rem;
@@ -425,7 +439,10 @@ ul {
   .index__aside__div__img--style {
     border-radius: 50%;
     height: 200px;
-    width: 200px; } }
+    width: 200px; }
+  .contacto__aside__div--contain {
+    height: 100%;
+    width: 100%; } }
 
 /*estructura*/
 @media only screen and (min-device-width: 320px) {
@@ -526,7 +543,11 @@ ul {
     flex-flow: row wrap;
     justify-content: space-around;
     align-content: center;
-    margin-top: 10px; } }
+    margin-top: 10px; }
+  .contacto__main__form__h1--style {
+    margin-top: 10px; }
+  .contacto__aside__div__cursor--animation {
+    display: none; } }
 
 @media only screen and (min-width: 750px) {
   .contacto__main__form--contain {
@@ -564,14 +585,17 @@ ul {
     grid-area: profes; }
   .body__footer-contain {
     grid-area: footer; }
+  .contacto__main--contain {
+    grid-area: main; }
+  .contacto__aside--contain {
+    grid-area: redes; }
   .body__index--contain {
     display: grid;
     grid-template-columns: 9fr 3fr;
     grid-template-rows: auto auto 1420px auto auto;
     grid-template-areas: "nav nav" "banner banner" "main profes" "mapa profes" "footer footer";
     justify-items: stretch;
-    align-items: stretch;
-    grid-column-gap: 5px; }
+    align-items: stretch; }
   /*index_aside*/
   .index__aside-contain {
     justify-self: stretch;
@@ -595,11 +619,27 @@ ul {
     margin-left: 85px; } }
 
 @media only screen and (min-device-width: 1024px) {
+  .body__contacto--contain {
+    display: grid;
+    grid-template-columns: 10fr 2fr;
+    grid-template-rows: repeat(4, auto);
+    grid-template-areas: "nav nav" "banner banner" "main redes" "footer footer";
+    justify-items: stretch;
+    align-items: stretch;
+    grid-column-gap: 5px; }
+  .contacto__aside__div--contain {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+    align-content: center; }
+  .contacto__aside--contain {
+    margin-top: -15px; }
   .contacto__main__form--contain {
     display: flex;
     flex-flow: row wrap;
     justify-content: space-around;
-    align-content: space-around; } }
+    align-content: space-around;
+    margin-bottom: 10px; } }
 
 /*animaciones*/
 @keyframes body__header__h1-h2__animation {
@@ -625,3 +665,287 @@ ul {
   animation-timing-function: ease-in;
   animation-duration: 2s;
   animation-delay: 0s; }
+
+@media only screen and (min-device-width: 1020px) and (max-device-width: 1024px) {
+  @keyframes encendidoYapagado {
+    0% {
+      position: relative;
+      bottom: 250px; }
+    20% {
+      position: relative;
+      bottom: 50px;
+      opacity: 100%; }
+    25% {
+      opacity: 0%; }
+    30% {
+      opacity: 100%; }
+    35% {
+      opacity: 0; }
+    40% {
+      opacity: 100%; }
+    45% {
+      opacity: 0; }
+    47% {
+      opacity: 100%; }
+    61% {
+      color: #3b5998; }
+    62% {
+      color: #7795d4; }
+    65% {
+      color: #3b5998; }
+    100% {
+      opacity: 100%; } }
+  @keyframes encendidoYapagado2 {
+    0% {
+      position: relative;
+      bottom: 150px;
+      opacity: 0; }
+    18% {
+      opacity: 100%; }
+    20% {
+      bottom: 20px; }
+    25% {
+      opacity: 0%; }
+    30% {
+      opacity: 100%; }
+    35% {
+      opacity: 0; }
+    40% {
+      opacity: 100%; }
+    45% {
+      opacity: 0; }
+    47% {
+      opacity: 100%; }
+    71% {
+      color: #dd2a7b; }
+    72% {
+      color: #ff66b7; }
+    75% {
+      color: #dd2a7b; }
+    100% {
+      opacity: 100%; } }
+  @keyframes cursor--animado {
+    0% {
+      opacity: 0; }
+    10% {
+      opacity: 0; }
+    20% {
+      opacity: 0; }
+    30% {
+      opacity: 0; }
+    40% {
+      opacity: 0; }
+    50% {
+      opacity: 100%; }
+    55% {
+      opacity: 100%; }
+    60% {
+      transform: translate(100px, -40px);
+      font-size: 1.5rem; }
+    62% {
+      transform: translate(100px, -40px);
+      font-size: 1.2rem; }
+    65% {
+      transform: translate(100px, -40px);
+      font-size: 1.5rem; }
+    70% {
+      transform: translate(100px, -275px);
+      opacity: 100%;
+      font-size: 1.5rem; }
+    72% {
+      transform: translate(100px, -275px);
+      font-size: 1.2rem; }
+    75% {
+      transform: translate(100px, -275px);
+      opacity: 100%;
+      font-size: 1.5rem; }
+    80% {
+      transform: translate(200px, -420px); }
+    81% {
+      opacity: 0; }
+    82% {
+      opacity: 0; }
+    100% {
+      opacity: 0; } }
+  .icon--fb {
+    animation-name: encendidoYapagado;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in;
+    animation-duration: 10s;
+    animation-delay: 0s;
+    color: #3b5998;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    position: relative;
+    bottom: 50px;
+    display: inline-block; }
+  .icon--ig {
+    animation-name: encendidoYapagado2;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in;
+    animation-duration: 10s;
+    animation-delay: 0s;
+    color: #dd2a7b;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 900;
+    text-align: center;
+    position: relative;
+    bottom: 20px;
+    display: inline-block; }
+  .contacto__aside__div__cursor--animation {
+    animation-name: cursor--animado;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in;
+    animation-duration: 10s;
+    animation-delay: 0s;
+    display: inline-block;
+    position: absolute;
+    bottom: -390px;
+    right: 220px;
+    font-size: 1.5rem;
+    font-weight: 900;
+    color: #b6c7db;
+    text-shadow: 2px 2px 1px #000000;
+    z-index: 10; } }
+
+@media only screen and (min-device-width: 1360px) and (max-device-width: 1366px) {
+  .contacto__aside__div__cursor--animation {
+    animation-name: cursor--animado;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in;
+    animation-duration: 10s;
+    animation-delay: 0s;
+    display: inline-block;
+    position: absolute;
+    bottom: -50px;
+    right: 220px;
+    font-size: 1.5rem;
+    font-weight: 900;
+    color: #b6c7db;
+    text-shadow: 2px 2px 1px #000000;
+    z-index: 10; }
+  @keyframes cursor--animado {
+    0% {
+      opacity: 0; }
+    10% {
+      opacity: 0; }
+    20% {
+      opacity: 0; }
+    30% {
+      opacity: 0; }
+    40% {
+      opacity: 0; }
+    50% {
+      opacity: 100%; }
+    55% {
+      opacity: 100%; }
+    60% {
+      transform: translate(100px, -40px);
+      font-size: 1.5rem; }
+    62% {
+      transform: translate(100px, -40px);
+      font-size: 1.2rem; }
+    65% {
+      transform: translate(100px, -40px);
+      font-size: 1.5rem; }
+    70% {
+      transform: translate(100px, -160px);
+      opacity: 100%;
+      font-size: 1.5rem; }
+    72% {
+      transform: translate(100px, -160px);
+      font-size: 1.2rem; }
+    75% {
+      transform: translate(100px, -160px);
+      opacity: 100%;
+      font-size: 1.5rem; }
+    80% {
+      transform: translate(200px, -280px); }
+    81% {
+      opacity: 0; }
+    82% {
+      opacity: 0; }
+    100% {
+      opacity: 0; } }
+  .icon--fb {
+    animation-name: encendidoYapagado;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in;
+    animation-duration: 10s;
+    animation-delay: 0s;
+    color: #3b5998;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    position: relative;
+    bottom: 50px;
+    display: inline-block; }
+  .icon--ig {
+    animation-name: encendidoYapagado2;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in;
+    animation-duration: 10s;
+    animation-delay: 0s;
+    color: #dd2a7b;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 900;
+    text-align: center;
+    position: relative;
+    bottom: 20px;
+    display: inline-block; }
+  @keyframes encendidoYapagado {
+    0% {
+      position: relative;
+      bottom: 250px; }
+    20% {
+      position: relative;
+      bottom: 50px;
+      opacity: 100%; }
+    25% {
+      opacity: 0%; }
+    30% {
+      opacity: 100%; }
+    35% {
+      opacity: 0; }
+    40% {
+      opacity: 100%; }
+    45% {
+      opacity: 0; }
+    47% {
+      opacity: 100%; }
+    61% {
+      color: #3b5998; }
+    62% {
+      color: #7795d4; }
+    65% {
+      color: #3b5998; }
+    100% {
+      opacity: 100%; } }
+  @keyframes encendidoYapagado2 {
+    0% {
+      position: relative;
+      bottom: 150px;
+      opacity: 0; }
+    18% {
+      opacity: 100%; }
+    20% {
+      bottom: 20px; }
+    25% {
+      opacity: 0%; }
+    30% {
+      opacity: 100%; }
+    35% {
+      opacity: 0; }
+    40% {
+      opacity: 100%; }
+    45% {
+      opacity: 0; }
+    47% {
+      opacity: 100%; }
+    71% {
+      color: #dd2a7b; }
+    72% {
+      color: #ff66b7; }
+    75% {
+      color: #dd2a7b; }
+    100% {
+      opacity: 100%; } } }

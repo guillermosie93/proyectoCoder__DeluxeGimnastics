@@ -106,5 +106,8 @@ $color-principal: #541e53;
         border-radius: $bordeO;
         height: $estructura-M;
         width: $estructura-M;
-}
+    }
+    .contacto__aside__div--contain{
+        @include alto-ancho($estructura-resp, $estructura-resp);
+    }
 }

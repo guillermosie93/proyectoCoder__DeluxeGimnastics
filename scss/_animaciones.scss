@@ -3,6 +3,8 @@ $color-principal: #4974a5;
 $color-principal-claro: #b6c7db;
 $sombra-light: 2px 2px 3px $color-principal-claro;
 $sombra-dark: 3px 3px 4px $color-principal;
+$color-fb: #3b5998;
+$color-ig: #dd2a7b;
 
 
 @keyframes body__header__h1-h2__animation {
@@ -24,6 +26,227 @@ $sombra-dark: 3px 3px 4px $color-principal;
     animation-timing-function: ease-in;
     animation-duration: 2s;
     animation-delay: 0s;        
-    
 }
 
+@media only screen and (min-device-width: 1020px) and (max-device-width: 1024px){
+    @keyframes encendidoYapagado{
+        0%{position: relative;
+            bottom: 250px;}
+        20%{position: relative;
+            bottom: 50px;
+            opacity: 100%;}
+        25%{opacity: 0%;}
+        30%{opacity: 100%;}
+        35%{opacity: 0;}
+        40%{opacity: 100%;}
+        45%{opacity: 0;}
+        47%{opacity: 100%;}
+        61%{color: $color-fb;}
+        62%{color: $color-fb + 60%;}
+        65%{color: $color-fb;}
+        100%{opacity: 100%;}
+    }
+
+    @keyframes encendidoYapagado2 {
+        0%{position: relative;
+            bottom: 150px;
+            opacity: 0;}
+        18%{opacity: 100%;}
+        20%{bottom: 20px;}
+        25%{opacity: 0%;}
+        30%{opacity: 100%;}
+        35%{opacity: 0;}
+        40%{opacity: 100%;}
+        45%{opacity: 0;}
+        47%{opacity: 100%;}
+        71%{color: $color-ig;}
+        72%{color: $color-ig + 60%;}
+        75%{color: $color-ig;}
+        100%{opacity: 100%;}
+    }
+
+    @keyframes cursor--animado{
+        0%{opacity: 0;}
+        10%{opacity: 0;}
+        20%{opacity: 0;}
+        30%{opacity: 0;}
+        40%{opacity: 0;}
+        50%{opacity: 100%;}
+        55%{opacity: 100%;}
+        60%{transform: translate(100px, -40px);
+        font-size: 1.5rem;}
+        62%{transform: translate(100px, -40px);
+        font-size: 1.2rem;}
+        65%{transform: translate(100px, -40px);
+        font-size: 1.5rem;}
+        70%{transform: translate(100px, -275px);
+            opacity: 100%;
+        font-size: 1.5rem;}
+        72%{transform: translate(100px, -275px);
+        font-size: 1.2rem;}
+        75%{transform: translate(100px, -275px);
+            opacity: 100%;
+        font-size: 1.5rem;}
+        80%{transform: translate(200px, -420px);}
+        81%{opacity: 0;}
+        82%{opacity: 0;}
+        100%{opacity: 0;}
+    }
+
+    .icon--fb{
+        animation-name: encendidoYapagado;
+        animation-iteration-count: infinite;
+        animation-timing-function: ease-in;
+        animation-duration: 10s;
+        animation-delay: 0s;
+        color: #3b5998;
+        font-family: Arial, Helvetica, sans-serif;  
+        text-align: center;
+        position: relative;
+        bottom: 50px;
+        display: inline-block;
+    }
+    .icon--ig{
+        animation-name: encendidoYapagado2;
+        animation-iteration-count: infinite;
+        animation-timing-function: ease-in;
+        animation-duration: 10s;
+        animation-delay: 0s;    
+        color: #dd2a7b;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: 900;
+        text-align: center;
+        position: relative;
+        bottom: 20px;
+        display: inline-block;
+    }
+
+    .contacto__aside__div__cursor--animation{
+        animation-name: cursor--animado;
+        animation-iteration-count: infinite;
+        animation-timing-function: ease-in;
+        animation-duration: 10s;
+        animation-delay: 0s;
+        display: inline-block;
+        position: absolute;
+        bottom: -390px;
+        right: 220px;
+        font-size: 1.5rem;
+        font-weight: 900;
+        color: $color-principal-claro;
+        text-shadow: 2px 2px 1px #000000;
+        z-index: 10;
+    }
+}
+
+
+@media only screen and (min-device-width: 1360px) and (max-device-width: 1366px){
+    .contacto__aside__div__cursor--animation{
+        animation-name: cursor--animado;
+        animation-iteration-count: infinite;
+        animation-timing-function: ease-in;
+        animation-duration: 10s;
+        animation-delay: 0s;
+        display: inline-block;
+        position: absolute;
+        bottom: -50px;
+        right: 220px;
+        font-size: 1.5rem;
+        font-weight: 900;
+        color: $color-principal-claro;
+        text-shadow: 2px 2px 1px #000000;
+        z-index: 10;
+    }
+
+    @keyframes cursor--animado{
+        0%{opacity: 0;}
+        10%{opacity: 0;}
+        20%{opacity: 0;}
+        30%{opacity: 0;}
+        40%{opacity: 0;}
+        50%{opacity: 100%;}
+        55%{opacity: 100%;}
+        60%{transform: translate(100px, -40px);
+        font-size: 1.5rem;}
+        62%{transform: translate(100px, -40px);
+        font-size: 1.2rem;}
+        65%{transform: translate(100px, -40px);
+        font-size: 1.5rem;}
+        70%{transform: translate(100px, -160px);
+            opacity: 100%;
+        font-size: 1.5rem;}
+        72%{transform: translate(100px, -160px);
+        font-size: 1.2rem;}
+        75%{transform: translate(100px, -160px);
+            opacity: 100%;
+        font-size: 1.5rem;}
+        80%{transform: translate(200px, -280px);}
+        81%{opacity: 0;}
+        82%{opacity: 0;}
+        100%{opacity: 0;}
+    }
+
+    .icon--fb{
+        animation-name: encendidoYapagado;
+        animation-iteration-count: infinite;
+        animation-timing-function: ease-in;
+        animation-duration: 10s;
+        animation-delay: 0s;
+        color: #3b5998;
+        font-family: Arial, Helvetica, sans-serif;  
+        text-align: center;
+        position: relative;
+        bottom: 50px;
+        display: inline-block;
+    }
+    .icon--ig{
+        animation-name: encendidoYapagado2;
+        animation-iteration-count: infinite;
+        animation-timing-function: ease-in;
+        animation-duration: 10s;
+        animation-delay: 0s;    
+        color: #dd2a7b;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: 900;
+        text-align: center;
+        position: relative;
+        bottom: 20px;
+        display: inline-block;
+    }
+
+    @keyframes encendidoYapagado{
+        0%{position: relative;
+            bottom: 250px;}
+        20%{position: relative;
+            bottom: 50px;
+            opacity: 100%;}
+        25%{opacity: 0%;}
+        30%{opacity: 100%;}
+        35%{opacity: 0;}
+        40%{opacity: 100%;}
+        45%{opacity: 0;}
+        47%{opacity: 100%;}
+        61%{color: $color-fb;}
+        62%{color: $color-fb + 60%;}
+        65%{color: $color-fb;}
+        100%{opacity: 100%;}
+    }
+
+    @keyframes encendidoYapagado2 {
+        0%{position: relative;
+            bottom: 150px;
+            opacity: 0;}
+        18%{opacity: 100%;}
+        20%{bottom: 20px;}
+        25%{opacity: 0%;}
+        30%{opacity: 100%;}
+        35%{opacity: 0;}
+        40%{opacity: 100%;}
+        45%{opacity: 0;}
+        47%{opacity: 100%;}
+        71%{color: $color-ig;}
+        72%{color: $color-ig + 60%;}
+        75%{color: $color-ig;}
+        100%{opacity: 100%;}
+    }
+}

@@ -38,6 +38,14 @@ $form-check-input-checked-color: $color-principal;
 $form-select-indicator-color: $color-principal;
 $navbar-dark-brand-color: $color-principal;
 $input-color: $color-principal;
+$btn-focus-box-shadow: none;
+$accordion-button-focus-box-shadow: $btn-focus-box-shadow;
+$input-focus-border-color: $color-principal-claro;
+$accordion-button-focus-border-color: $input-focus-border-color;
+$accordion-button-active-bg: $color-principal-claro;
+$accordion-button-active-color: $color-principal;
+$color-fb: #3b5998;
+$color-ig: #dd2a7b;
 
 
 
@@ -182,16 +190,21 @@ h1{
 /*nosotros*/
 .nosotros__main__div__div__collapse--contain{
     color: $color-principal;
-    opacity: 70%;
-
 }
 .nosotros__main__div__items--contain{
-    background-color: $color-principal-claro;
+    background-color: #ffffff;
 }
 
 .bttn--card{
     color: $color-principal;
-    background-color:transparent;
+    background-color:$color-principal-claro;
+}
+
+.bttn--card:focus{
+    box-shadow: $accordion-button-focus-box-shadow;
+    border-color: $accordion-button-focus-border-color;
+    background-color: $accordion-button-active-bg;
+    color: $accordion-button-active-color;
 }
 
 .bttn--card:hover{
@@ -264,18 +277,25 @@ h1{
 }
 
 .contacto__aside__div--contain{
-    background-color: $color-principal-claro;
-    border-radius: 20px;
+    background-color: $color-principal;
 }
-.contacto__aside__div__icon--style{
-    color: $color-principal;
-}
-
-.contacto__aside__div__icon--style:hover{
-    color:$color-principal
+.contacto__aside__div__h1--style{
+    color: $color-principal-claro;
+    text-shadow: $sombra-light;
 }
 
 .contacto__main__form__h1--style{
-    color: $color-contraste;
+    color: $color-principal-claro;
     text-shadow: $sombra-dark;
+    background-color: $color-principal;
+}
+
+$redes:(
+    ig: $color-ig,
+    fb: $color-fb
+);
+@each $rs, $color in $redes{
+    .icon--#{$rs}{
+        color: $color;
+    }
 }

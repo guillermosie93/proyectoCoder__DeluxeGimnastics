@@ -112,7 +112,13 @@ ul{
 }
 
 .contacto__aside__div__icon--style{
-    @include font-type($font-m, $font-gruesa);
+    @include font-type($font-l, $font-gruesa);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.contacto__aside__div__h1--style{
+    font-size: $font-l;
+    padding: 15px;
 }
 
 .table__tbody__th{
@@ -130,4 +136,5 @@ ul{
 .form__btn--dark, .form__btn--light{
     font-weight: $font-gruesa;
 }
+
 

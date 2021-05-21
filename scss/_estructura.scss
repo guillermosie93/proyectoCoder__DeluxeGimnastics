@@ -94,6 +94,14 @@ $espaciado-l: 100px;
         margin-top: $espaciado-s;
     }
 
+    .contacto__main__form__h1--style{
+        margin-top: $espaciado-s;
+    }
+
+    .contacto__aside__div__cursor--animation{
+        display: none;
+    }
+
 }
 
 @media only screen and (min-width: 750px){
@@ -136,7 +144,9 @@ $espaciado-l: 100px;
         index__main-contain: main,
         index__article-mapa: mapa,
         index__aside-contain: profes,
-        body__footer-contain: footer
+        body__footer-contain: footer,
+        contacto__main--contain: main,
+        contacto__aside--contain: redes
        );
 
     @each $bloque, $bloque-grid in $g-area {
@@ -157,7 +167,6 @@ $espaciado-l: 100px;
         "footer footer";
         justify-items: stretch;
         align-items: stretch;
-        grid-column-gap: 5px;
     }
 
     /*index_aside*/
@@ -192,9 +201,30 @@ $espaciado-l: 100px;
 }
 
 @media only screen and (min-device-width: 1024px){
+    .body__contacto--contain{
+        display: grid;
+        grid-template-columns: 10fr 2fr;
+        grid-template-rows: repeat(4, auto);
+        grid-template-areas:
+        "nav nav"
+        "banner banner"
+        "main redes"
+        "footer footer";
+        justify-items: stretch;
+        align-items: stretch;
+        grid-column-gap: 5px;
+    }
+    .contacto__aside__div--contain{
+        @include flex-box(flex, column nowrap, space-between, center);
+    }
+    .contacto__aside--contain{
+        margin-top: -15px;
+    }
     .contacto__main__form--contain{
         @include flex-box(flex, row wrap, space-around, space-around);
+        margin-bottom: $espaciado-s;
     }
+
 }
 
 
