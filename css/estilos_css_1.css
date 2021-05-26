@@ -16,7 +16,7 @@
   color: #eab4e9;
   text-shadow: 3px 3px 4px #eab4e9; }
 
-.body__footer__div-icon a {
+.body__footer__div__icon--style a {
   color: #eab4e9;
   text-shadow: 3px 3px 4px #eab4e9; }
 
@@ -109,9 +109,9 @@ h1 {
 .body__footer-contain {
   background-image: linear-gradient(to bottom, #541e53, #2c002b); }
 
-.body__footer__div-sitemap {
+.body__footer__div__sitemap--style {
   color: #eab4e9; }
-  .body__footer__div-sitemap li a {
+  .body__footer__div__sitemap--style li a {
     color: #eab4e9;
     text-shadow: 3px 3px 4px #eab4e9; }
 
@@ -283,15 +283,15 @@ ul {
 .body__footer__div-text p {
   font-size: 1.2rem; }
 
-.body__footer__div-icon a {
+.body__footer__div__icon--style a {
   font-size: 2rem;
   text-shadow: none; }
 
-.body__footer__div-sitemap {
+.body__footer__div__sitemap--style {
   list-style: none; }
-  .body__footer__div-sitemap li a {
+  .body__footer__div__sitemap--style li a {
     font-weight: 900; }
-  .body__footer__div-sitemap li {
+  .body__footer__div__sitemap--style li {
     font-weight: 200; }
 
 .bttn--card {
@@ -501,9 +501,9 @@ ul {
     align-content: space-around; }
   .body__footer__div-text {
     padding-top: 20px; }
-  .body__footer__div-sitemap {
+  .body__footer__div__sitemap--style {
     display: none; }
-  .body__footer__div-icon {
+  .body__footer__div__icon--style {
     display: flex;
     flex-flow: column nowrap;
     justify-content: space-between;
@@ -535,7 +535,8 @@ ul {
     margin-top: 10px; }
   .contacto__main__form__div__div--botones {
     margin-top: 10px;
-    text-align: center; }
+    text-align: center;
+    padding: 50px; }
   .form__btn--light {
     padding: 5px; }
   .contacto__aside__div--contain {
@@ -562,7 +563,7 @@ ul {
     grid-area: sitemap; }
   .body__footer__div-icon {
     grid-area: redes; }
-  .body__footer__div-sitemap {
+  .body__footer__div__sitemap--style {
     display: block; }
   .body__footer-contain {
     display: grid;
@@ -626,7 +627,8 @@ ul {
     grid-template-areas: "nav nav" "banner banner" "main redes" "footer footer";
     justify-items: stretch;
     align-items: stretch;
-    grid-column-gap: 5px; }
+    grid-column-gap: 5px;
+    grid-row-gap: 10px; }
   .contacto__aside__div--contain {
     display: flex;
     flex-flow: column nowrap;
@@ -638,8 +640,7 @@ ul {
     display: flex;
     flex-flow: row wrap;
     justify-content: space-around;
-    align-content: space-around;
-    margin-bottom: 10px; } }
+    align-content: space-around; } }
 
 /*animaciones*/
 @keyframes body__header__h1-h2__animation {
