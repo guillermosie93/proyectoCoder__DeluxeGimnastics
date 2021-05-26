@@ -47,11 +47,11 @@ $espaciado-l: 100px;
         padding-top: $espaciado-s + $espaciado-s;
     }
 
-    .body__footer__div-sitemap{
+    .body__footer__div__sitemap--style{
         display: none;
     }
 
-    .body__footer__div-icon{
+    .body__footer__div__icon--style{
         @include flex-box(flex, column nowrap, space-between, space-around);
     }
 
@@ -122,7 +122,7 @@ $espaciado-l: 100px;
         }
     }
 
-    .body__footer__div-sitemap{
+    .body__footer__div__sitemap--style{
         display: block;
     }
 

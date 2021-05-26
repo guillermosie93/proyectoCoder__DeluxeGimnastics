@@ -69,7 +69,7 @@ $color-ig: #dd2a7b;
 }
 
 /*letra-clara-c/sombra*/
-@each $letra-clara in index__aside-contain, body__footer__div-icon a, body__footer__div-text p{
+@each $letra-clara in index__aside-contain, body__footer__div__icon--style a, body__footer__div-text p{
     .#{$letra-clara}{
         color: $font-color-light;
         text-shadow: $sombra-light;
@@ -155,7 +155,7 @@ h1{
     background-image: $degradado-principal;
 }
 
-.body__footer__div-sitemap{
+.body__footer__div__sitemap--style{
     color: $color-principal-claro;
         li a{
             color: $color-principal-claro;
