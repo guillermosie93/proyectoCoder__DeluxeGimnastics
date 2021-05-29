@@ -28,6 +28,7 @@ h4{
 
 h1, h2 {
     font-weight: $font-gruesa;
+    font-size: $font-l;
 }
 
 ul{
@@ -41,10 +42,17 @@ ul{
 .nav__div__div__ul__li--style{
     @include font-type($font-m, $font-gruesa);
     text-align: center;
+    a{
+    font-family: 'Prompt', sans-serif;
+    font-weight: 900;
+    }
 }
 
-.body__banner__div--img h1, h2{
+@each $h in h1 h2 {
+    .body__banner__div__#{$h}--style{
     font-weight: $font-gruesa;
+    font-family: 'Prompt', sans-serif;
+    }
 }
 
 .index__main__div__div-text{
@@ -121,6 +129,13 @@ ul{
     padding: 15px;
 }
 
+@each $bloque in header h5, body, footer {
+    .modal-#{$bloque} {
+        @include font-type($font-m, $font-gruesa);
+        text-align: center;
+    }
+}
+
 .table__tbody__th{
     @include font-type($font-s, $font-gruesa);
     font-family: montserrat;
@@ -133,8 +148,11 @@ ul{
     color: $input-font-weight;
 }
 
-.form__btn--dark, .form__btn--light{
+
+@each $color in dark, light{
+.form__btn--#{$color}{
     font-weight: $font-gruesa;
+    }
 }
 
 

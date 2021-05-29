@@ -81,9 +81,8 @@ $espaciado-l: 100px;
     }
 
     .contacto__main__form__div__div--botones{
-        margin-top: $espaciado-s;
         text-align: center;
-        padding: $espaciado-m;
+        padding: $espaciado-s;
     }
 
     .form__btn--light{
@@ -214,7 +213,6 @@ $espaciado-l: 100px;
         justify-items: stretch;
         align-items: stretch;
         grid-column-gap: 5px;
-        grid-row-gap: $espaciado-s;
     }
     .contacto__aside__div--contain{
         @include flex-box(flex, column nowrap, space-between, center);

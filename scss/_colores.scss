@@ -105,11 +105,12 @@ h1{
 
 .nav__div__div__ul__li--style{
     padding: 6.5px;
-        a{
-        color: $color-contraste-claro;
-        text-shadow: $sombra-dark;
-        }
+    a{
+    color: $color-contraste-claro;
+    text-shadow: $sombra-dark;
+    }
 }
+
 
 .horarios__section__main__div__h1--estilo{
     color:$color-principal-claro;
@@ -125,8 +126,14 @@ h1{
 .body__banner--contain{
     @include bk-img($bk-header, center, cover, no-repeat);
 }
-.body__banner__div--img h1, h2{
- text-shadow: $sombra-dark;
+.body__banner__div__h1--style{
+    color: $color-contraste + 60;
+    text-shadow: $sombra-dark;
+}
+
+.body__banner__div__h2--style{
+    color: $color-contraste + 100;
+    text-shadow: $sombra-dark;
 }
 
 .index__main__div__div-degradado{
@@ -169,11 +176,16 @@ h1{
         box-shadow: $sombra-dark;
 }
 
-@each $bloque in header, body, footer {
+@each $bloque in header, footer {
     .modal-#{$bloque} {
         @include bk-img($modal-content-bg, center, cover, repeat);
-        background-color: $color-principal-claro;
+        background-color: #ffffff;
+        color: black;
+        text-shadow: $sombra-dark;
     }
+}
+.modal-title{
+    background-color: #ffffff;
 }
 /*horarios*/
 .table{

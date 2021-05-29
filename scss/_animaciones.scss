@@ -5,27 +5,42 @@ $sombra-light: 2px 2px 3px $color-principal-claro;
 $sombra-dark: 3px 3px 4px $color-principal;
 $color-fb: #3b5998;
 $color-ig: #dd2a7b;
+$color-principal2: #541e53;
+$font-xl: 3rem;
+$font-l: 2.2rem;
 
-
-@keyframes body__header__h1-h2__animation {
-    0%{ color: $color-contraste-claro;
-        text-shadow: $sombra-dark;}
-    25%{ color:$color-principal;
-        text-shadow: $sombra-light;}
-    50%{ color: $color-principal-claro;
-        text-shadow: $sombra-dark;}
-    75%{ color: $color-principal;
-        text-shadow: $sombra-light;}
-    100%{ color:$color-principal-claro;
-        text-shadow: $sombra-dark;}
+@media only screen and (min-device-width: 750px){
+ @keyframes body__header__h1-h2__animation{
+    0%{font-size: $font-l;}
+    10%{font-size: $font-l + .3;
+    color:$color-principal2 + 150;}
+    30%{font-size: $font-l + .5;
+    color:$color-principal + 100;}
+    39%{font-size: $font-l + .5;}
+    40%{font-size: $font-l + .5;}
+    50%{font-size: $font-l + .5;
+    color: $color-principal2 + 150;}
+    60%{font-size: $font-l + .5;
+    color:$color-principal + 100;}
+    65%{font-size: $font-l + .5;
+    color:$color-principal2 + 150;}    
+    70%{font-size: $font-l + .5;
+    color: $color-principal + 100;}
+    95%{font-size: $font-l + .5;
+    color: $color-principal + 100;}
+    99%{font-size: $font-l;}
+    100%{font-size: $font-l;}
  }
-
- .body__banner__div--img h1, h2{
+ 
+ @each $h in h1, h2 {
+    .body__banner__div__#{$h}--style{
     animation-name: body__header__h1-h2__animation;
     animation-iteration-count: infinite;
     animation-timing-function: ease-in;
-    animation-duration: 2s;
+    animation-duration: 15s;
     animation-delay: 0s;        
+    }
+ }
 }
 
 @media only screen and (min-device-width: 1020px) and (max-device-width: 1024px){

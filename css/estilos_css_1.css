@@ -87,7 +87,12 @@ h1 {
   background-size: cover;
   background-repeat: no-repeat; }
 
-.body__banner__div--img h1, h2 {
+.body__banner__div__h1--style {
+  color: #85b0e1;
+  text-shadow: 2px 2px 4px black; }
+
+.body__banner__div__h2--style {
+  color: #add8ff;
   text-shadow: 2px 2px 4px black; }
 
 .index__main__div__div-degradado {
@@ -125,21 +130,21 @@ h1 {
   background-position: center;
   background-size: cover;
   background-repeat: repeat;
-  background-color: #eab4e9; }
-
-.modal-body {
-  background-image: url(../media/fondo.png);
-  background-position: center;
-  background-size: cover;
-  background-repeat: repeat;
-  background-color: #eab4e9; }
+  background-color: #ffffff;
+  color: black;
+  text-shadow: 2px 2px 4px black; }
 
 .modal-footer {
   background-image: url(../media/fondo.png);
   background-position: center;
   background-size: cover;
   background-repeat: repeat;
-  background-color: #eab4e9; }
+  background-color: #ffffff;
+  color: black;
+  text-shadow: 2px 2px 4px black; }
+
+.modal-title {
+  background-color: #ffffff; }
 
 /*horarios*/
 .table {
@@ -254,7 +259,8 @@ h4 {
   text-align: center; }
 
 h1, h2 {
-  font-weight: 900; }
+  font-weight: 900;
+  font-size: 2.2rem; }
 
 ul {
   list-style: none; }
@@ -266,9 +272,17 @@ ul {
   font-size: 1.5rem;
   font-weight: 900;
   text-align: center; }
+  .nav__div__div__ul__li--style a {
+    font-family: 'Prompt', sans-serif;
+    font-weight: 900; }
 
-.body__banner__div--img h1, h2 {
-  font-weight: 900; }
+.body__banner__div__h1--style {
+  font-weight: 900;
+  font-family: 'Prompt', sans-serif; }
+
+.body__banner__div__h2--style {
+  font-weight: 900;
+  font-family: 'Prompt', sans-serif; }
 
 .index__main__div__div-text a {
   font-size: 3rem;
@@ -326,6 +340,21 @@ ul {
   font-size: 2.2rem;
   padding: 15px; }
 
+.modal-header h5 {
+  font-size: 1.5rem;
+  font-weight: 900;
+  text-align: center; }
+
+.modal-body {
+  font-size: 1.5rem;
+  font-weight: 900;
+  text-align: center; }
+
+.modal-footer {
+  font-size: 1.5rem;
+  font-weight: 900;
+  text-align: center; }
+
 .table__tbody__th {
   font-size: 1rem;
   font-weight: 900;
@@ -336,7 +365,10 @@ ul {
   font-weight: 900;
   color: 900; }
 
-.form__btn--dark, .form__btn--light {
+.form__btn--dark {
+  font-weight: 900; }
+
+.form__btn--light {
   font-weight: 900; }
 
 /*tamaños*/
@@ -534,9 +566,8 @@ ul {
   .form-check-label {
     margin-top: 10px; }
   .contacto__main__form__div__div--botones {
-    margin-top: 10px;
     text-align: center;
-    padding: 50px; }
+    padding: 10px; }
   .form__btn--light {
     padding: 5px; }
   .contacto__aside__div--contain {
@@ -627,8 +658,7 @@ ul {
     grid-template-areas: "nav nav" "banner banner" "main redes" "footer footer";
     justify-items: stretch;
     align-items: stretch;
-    grid-column-gap: 5px;
-    grid-row-gap: 10px; }
+    grid-column-gap: 5px; }
   .contacto__aside__div--contain {
     display: flex;
     flex-flow: column nowrap;
@@ -643,29 +673,51 @@ ul {
     align-content: space-around; } }
 
 /*animaciones*/
-@keyframes body__header__h1-h2__animation {
-  0% {
-    color: #B6C7DB;
-    text-shadow: 3px 3px 4px #4974a5; }
-  25% {
-    color: #4974a5;
-    text-shadow: 2px 2px 3px #b6c7db; }
-  50% {
-    color: #b6c7db;
-    text-shadow: 3px 3px 4px #4974a5; }
-  75% {
-    color: #4974a5;
-    text-shadow: 2px 2px 3px #b6c7db; }
-  100% {
-    color: #b6c7db;
-    text-shadow: 3px 3px 4px #4974a5; } }
-
-.body__banner__div--img h1, h2 {
-  animation-name: body__header__h1-h2__animation;
-  animation-iteration-count: infinite;
-  animation-timing-function: ease-in;
-  animation-duration: 2s;
-  animation-delay: 0s; }
+@media only screen and (min-device-width: 750px) {
+  @keyframes body__header__h1-h2__animation {
+    0% {
+      font-size: 2.2rem; }
+    10% {
+      font-size: 2.5rem;
+      color: #eab4e9; }
+    30% {
+      font-size: 2.7rem;
+      color: #add8ff; }
+    39% {
+      font-size: 2.7rem; }
+    40% {
+      font-size: 2.7rem; }
+    50% {
+      font-size: 2.7rem;
+      color: #eab4e9; }
+    60% {
+      font-size: 2.7rem;
+      color: #add8ff; }
+    65% {
+      font-size: 2.7rem;
+      color: #eab4e9; }
+    70% {
+      font-size: 2.7rem;
+      color: #add8ff; }
+    95% {
+      font-size: 2.7rem;
+      color: #add8ff; }
+    99% {
+      font-size: 2.2rem; }
+    100% {
+      font-size: 2.2rem; } }
+  .body__banner__div__h1--style {
+    animation-name: body__header__h1-h2__animation;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in;
+    animation-duration: 15s;
+    animation-delay: 0s; }
+  .body__banner__div__h2--style {
+    animation-name: body__header__h1-h2__animation;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in;
+    animation-duration: 15s;
+    animation-delay: 0s; } }
 
 @media only screen and (min-device-width: 1020px) and (max-device-width: 1024px) {
   @keyframes encendidoYapagado {
